@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Demo: Object Store Demonstration</title>
+	<link rel="stylesheet" href="../../pure_dojo/dijit/themes/claro/claro.css" media="screen"/>
+	<script src="../../pure_dojo/dojo/dojo.js"
+			djConfig="baseUrl:'../../pure_dojo/dojo/',
+					isDebug: false,
+					parseOnLoad: true"></script>
+	<style type="text/css">
+		@import "../../pure_dojo/dojox/grid/resources/claroGrid.css";
+	</style>
+	<script>
+		dojo.require("com.ibm.btt.store.BTTOperationStore");
+		dojo.require("com.ibm.btt.store.mapping.charting.BTTCommonChartingMappingStore");
+
+		dojo.require("dojo.store.Observable");
+		dojo.require("dojo.store.Memory");
+		dojo.require("dojox.charting.StoreSeries");
+
+		// Require all dependencies
+		dojo.require("dojox.charting.Chart2D");
+		dojo.require("dojox.charting.themes.Claro");
+		
+		// When resources are loaded and the DOM is ready....
+		dojo.ready(function(){
+			// Create the data store
+			// Store information in a data store on the client side
+			var l_operation_store = new com.ibm.btt.store.BTTOperationStore({
+				contextPath:'/TestChart',
+				operationName:'getSingleDataOp'
+			});
+			var store = dojo.store.Observable(new com.ibm.btt.store.mapping.charting.BTTCommonChartingMappingStore({
+				store:l_operation_store,
+				simple:true,
+				mappingOptions:{
+					y:'amount',
+					legend:'label',
+					size:'size'
+				}
+			}));
+
+			var store2 = dojo.store.Observable(new com.ibm.btt.store.mapping.charting.BTTCommonChartingMappingStore({
+				store:l_operation_store,
+				simple:true,
+				mappingOptions:{
+					y:'amount',
+					legend:'label',
+					size:'size'
+				}
+			}));
+
+			var l_single_data = new com.ibm.btt.store.mapping.charting.BTTCommonChartingMappingStore({
+				store:new com.ibm.btt.store.BTTOperationStore({
+					contextPath:'/TestChart',
+					operationName:'getSingleDataOp'
+				}),
+				simple:true,
+				mappingOptions:{
+					y:'amount',
+					legend:'label',
+					size:'size'
+				}
+			})
+
+			// Create the chart within it's "holding" node
+			// Global so users can hit it from the console
+			chart = new dojox.charting.Chart2D("chartNode");
+
+			// Set the theme
+			chart.setTheme(dojox.charting.themes.Claro);
+
+			// Add the only/default plot 
+			chart.addPlot("default", {
+				type: "Lines",
+				markers: true
+			});
+			
+			// Add axes
+			chart.addAxis("x", { microTickStep: 1, minorTickStep: 1, max: 60 });
+			chart.addAxis("y", { vertical: true, fixLower: "major", fixUpper: "major", minorTickStep: 1 });
+
+			// Add the storeseries - Query for all data
+			chart.addSeries("y", new dojox.charting.StoreSeries(store, {}));
+			chart.addSeries("y2", new dojox.charting.StoreSeries(store2, { query: {} }));
+
+			// Render the chart!
+			chart.render();
+			
+			// Simulate a data chage from a store or service
+			var startNumber = 0;
+			var l_code = function() {
+				++startNumber;
+				// Notify the store of a data change
+				
+				var l_value = l_single_data.query();
+				if ( l_value && l_value.length > 0 ) {
+					store.notify(l_value[0]);
+				}
+
+				l_value = l_single_data.query();
+				if ( l_value && l_value.length > 0 ) {
+					store2.notify(l_value[0]);
+				}
+
+				if(startNumber < 60) setTimeout(l_code, 1000);
+			};
+			setTimeout(l_code, 1000);
+		});
+	</script>
+</head>
+<body>
+	<h1>StoreSeries & Observable</h1>
+	<div id="chartNode" style="width:800px;height:400px;"></div>
+	
+</body>
+</html>

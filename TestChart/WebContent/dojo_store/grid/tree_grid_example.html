@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Demo: Object Store Demonstration</title>
+	<style type="text/css">
+		@import "../../pure_dojo/dijit/themes/claro/claro.css";
+		@import "../../pure_dojo/dojox/grid/resources/claroGrid.css";
+	</style>
+	<script src="../../pure_dojo/dojo/dojo.js"
+			djConfig="baseUrl:'../../pure_dojo/dojo/',
+						isDebug: false,
+						parseOnLoad: true"></script>
+</head>
+<body class="claro">
+	<h1>dojox.grid.TreeGrid with object store</h1>
+	<!-- load dojo and provide config via data attribute -->
+	<script>
+		dojo.require("com.ibm.btt.store.BTTOperationStore");
+		dojo.require("dojo.data.ObjectStore");
+
+		dojo.require("dijit.tree.ForestStoreModel");
+		dojo.require("dijit.tree.TreeStoreModel");
+		dojo.require("dojox.grid.TreeGrid");
+	</script>
+
+	<div dojoType="com.ibm.btt.store.BTTOperationStore"
+		 data-dojo-id="serverStore"
+		 contextPath='/TestChart'
+		 operationName="typeListOp"
+		 dataRootPath="typeList"></div>
+
+	<!-- object store -->
+	<div dojoType="dojo.data.ObjectStore"
+		 data-dojo-id="bridge"
+		 objectStore="serverStore"
+		 labelProperty="name"></div>
+
+	<!-- object store -->
+	<div dojoType="dijit.tree.ForestStoreModel"
+		 data-dojo-id="storeAdapter"
+		 store="bridge"
+		 childrenAttrs="children"></div>
+
+	<table jsid="grid" dojoType="dojox.grid.TreeGrid" class="grid"
+		   treeModel="storeAdapter"
+		   defaultOpen="true"
+		   style="height:500px;border:1px solid blue">
+		<thead>
+			<tr>
+				<th field="name" width="auto">别名</th>
+				<th field="account_id" width="auto">账号</th>
+				<th field="currency" width="auto">币种</th>
+				<th field="balance" width="auto">账户余额</th>
+				<th field="available" width="auto">可用余额</th>
+				<th field="branch" width="auto">签约分行</th>
+				<th field="status" width="auto">账户状态</th>
+			</tr>
+		</thead>
+	</table>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" href="report.css"/>
+        <title>Generate Dojo Pages Report</title>
+        <script language="javascript">
+            function outliner () {
+                oMe = window.event.srcElement
+                //get child element
+                var child = document.all[event.srcElement.getAttribute("child",false)];
+                //if child element exists, expand or collapse it.
+                if (null != child)
+                    child.className = child.className == "collapsed" ? "expanded" : "collapsed";
+            }
+            
+            function Unicode2oStr(str){
+				var re=/&#[\da-fA-F]{1,5};/ig;
+				var arr=str.match(re);
+				if(arr==null)return("");
+				for(var i=0;i<arr.length;i++){
+				  arr[i]=String.fromCharCode(arr[i].replace(/[&#;]/g,""));
+				}
+				return(arr.toString().replace(/,/g,""))
+			} 
+
+            function changepic(obj, index) {
+                var check = obj.src.toLowerCase();
+                var tr = document.getElementById("tr"+index);
+                if (check.lastIndexOf("report_plus.gif") != -1)
+                {
+                    obj.src = "report_minus.gif"
+                    tr.style.display = "";
+                }
+                else
+                {
+                    obj.src = "report_plus.gif"
+                    tr.style.display = "none";
+                }
+            }
+        </script>
+    </head>
+    <body topmargin="0" leftmargin="0" rightmargin="0" >
+    
+        <!-- 25394 h1 _locID="ConversionReport">Generate Dojo Pages - Report</h1 -->
+        
+        	 
+	        <p><span class="note">
+	        <b>Report Time:</b>  2013-10-23 02:15:26<br/>
+	        </span></p>
+        	  
+       		  <table cellpadding="2" cellspacing="0" width="98%" border="1" bordercolor="white" class="infotable">
+		            <tr>
+		                <td nowrap="1" width="34%" class="header">File Name</td>
+		                <td nowrap="1" width="15%" class="header">Status</td>
+		                <td nowrap="1" width="13%" class="header">Errors</td>
+		                <td nowrap="1" width="13%" class="header">Warnings</td>
+		                <td nowrap="1" width="25%" class="header">Time</td>
+		            </tr>
+	                
+	                
+	                
+	                
+						
+						
+							
+							                     
+	                    
+	                        
+			                
+			                
+			                
+		                    
+		                    
+			             
+	                     
+	                     
+	                     
+	                         
+	                     
+	                    
+	                               
+	                
+						
+						
+							
+							                     
+	                    
+	                     
+	                     
+	                     
+	                    
+	                               
+	                
+						
+						
+						
+						
+						
+							                     
+	                    
+	                        
+		                        <tr class="row" style="color:#ff0000">
+				                    <td class="content">
+				                    	
+				                        	<IMG border="0" alt="expand/collapse section" class="expandable" height="11" onclick="changepic(this,'0_2')" src="Report_Plus.gif" width="9">
+				                        
+				                        Test.xui
+				                    </td>
+				                    <td class="content">
+				                    
+				                    	
+				                        Fail
+				                    
+				                    </td>
+				                    <td class="content">1</td>
+				                    <td class="content">0</td>
+				                    <td class="content">2013-10-23 02:15:26</td>
+					            </tr>
+					            <!-- 25375 -->
+					            
+			                    <tr id = "tr0_2" style="display:none" bgcolor="#ffffff">
+					                    <td colspan="7">
+					                        <table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+					                            <tr><td class="issuetitle" colspan="7" >Problems - Test.xui:</td></tr>
+					                                
+    												  	
+					                                    <tr>
+						                                    <td class="issueerror" style="border-bottom:solid 1 lightgray">
+						                                        <IMG border="0" alt="expand/collapse section" height="16"  src="error.gif" width="16">
+				                        						</IMG>Problems&nbsp;encountered:&nbsp;<br>java.lang.NullPointerException<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.css.util.CssValueUtils.parseRGBString(CssValueUtils.java:364)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.generator.CssColorRule.process(CssColorRule.java:34)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.generator.GeneratorUtil.convertAttributes(GeneratorUtil.java:324)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.generator.ContainerGenerator.generateHiddenWidgets(ContainerGenerator.java:170)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.generator.ContainerGenerator.generate(ContainerGenerator.java:79)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.generator.ContainerGenerator.generate(ContainerGenerator.java:117)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.generator.ContainerGenerator.generate(ContainerGenerator.java:117)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.css.box.BoxModelUtils.generate(BoxModelUtils.java:688)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.generator.GridLayoutGenerator.generateDiv(GridLayoutGenerator.java:415)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.generator.GridLayoutGenerator.generate(GridLayoutGenerator.java:83)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.generator.ContainerGenerator.generateLayout(ContainerGenerator.java:192)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.generator.ContainerGenerator.generate(ContainerGenerator.java:122)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.css.box.BoxModelUtils.generate(BoxModelUtils.java:688)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.generator.GenerateUIHandler.generatePageContent(GenerateUIHandler.java:241)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.generator.GenerateUIHandler.prepareTemplateVariables(GenerateUIHandler.java:513)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.generator.GenerateUIHandler.generate(GenerateUIHandler.java:101)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.action.GenerateAction.generate(GenerateAction.java:350)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.xui.editor2.action.GenerateAction$2.doGeneration(GenerateAction.java:171)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.common.job.FileGenerationJob$1.run(FileGenerationJob.java:160)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1957)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.common.job.FileGenerationJob.runTask(FileGenerationJob.java:152)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.ibm.btt.tools.common.job.internal.CommonUIJob.run(CommonUIJob.java:84)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)<br>
+						                                    </td>
+					                                    </tr>
+					                                    
+    												
+    												  	
+    												
+					                        </table>
+					                   </td>
+					            </tr>
+					            
+		                    
+			                
+			                
+			                
+		                    
+		                    
+			             
+	                     
+	                     
+	                     
+	                         
+	                     
+	                    
+	                               
+	                
+		                <tr valign="top">
+				            <td class="foot">
+				                
+				            </td>
+				            <td class="foot">
+						        Success: 0<BR/>
+						        Fail: 1
+				            </td>
+				            <td class="foot">1</td>
+				            <td class="foot">0</td>
+				            <td class="foot"></td>
+				        </tr>  
+       			 </table>
+    </body>
+</html>
+

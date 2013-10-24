@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<B004_main_Flow>
+
+
+	<htmlProcessor context="B004_main_Ctx" id="B004_main_Flow">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition id="initial.start" targetState="B004ChartTest"/>
+			</transitions>
+		</htmlState>
+
+		<htmlState typeIdInfo="OK" id="OK" type="final"/>
+
+		<htmlState type="page" typeIdInfo="B004Chart/Test.jsp" id="B004ChartTest">
+			<transitions>
+				<htmlTransition id="B004ChartTest.viewEvt" targetState="OK"/>
+			</transitions>
+		</htmlState>
+	</htmlProcessor>
+
+	<context id="B004_main_Ctx" type="op">
+		<refKColl refId="B004_main_Record"/>
+	</context>
+
+	<kColl id="B004_main_Record">
+	</kColl>
+
+</B004_main_Flow>

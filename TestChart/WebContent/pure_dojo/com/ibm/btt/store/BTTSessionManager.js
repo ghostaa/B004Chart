@@ -1,3 +1,0 @@
-/**
- * Manage BTT session
- */

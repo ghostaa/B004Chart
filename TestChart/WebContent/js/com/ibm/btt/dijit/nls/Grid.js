@@ -1,1 +1,0 @@
-({"nextPageBtn":"nextPage","prevPageBtn":"prevPage","rangeSingleMessage":"You need select one record","errorDialogTitle":"Error Message","rangeMultiMessage":"You need at least select one record"})

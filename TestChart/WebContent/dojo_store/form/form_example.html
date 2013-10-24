@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Object Store POC</title>
+	<link rel="stylesheet" href="../../pure_dojo/dijit/themes/claro/claro.css" media="screen"/>
+	<style type="text/css">
+		@import "../../pure_dojo/dojox/grid/resources/claroGrid.css";
+		html, body {
+		    width: 100%;
+		    height: 100%;
+		}
+	</style>
+	<!-- load DOJO -->
+	<script src="../../pure_dojo/dojo/dojo.js"
+			djConfig="baseUrl:'../../pure_dojo/dojo/',
+					isDebug: false,
+					parseOnLoad: true"></script>
+</head>
+<body class="claro">
+	<h1>追加新账户 </h1>
+	<script type="text/javascript">
+	<!--
+		/*bindingCfg =
+		{
+			rootPath: "listData",
+			config: [
+						{id:"numberTextBox01", dataName:"field01", property:"value"},
+						{id:"numberTextBox01", dataName:"field02", property:"tooltip"},
+						{id:"accountId", dataName:"accountId", property:"value"}
+					]
+		};*/
+		bindingForStep3 =
+			{
+				rootPath: "confirm",
+				config: [
+							{id:"accountId", dataName:"accountId", property:"innerHTML"},
+							{id:"alias", dataName:"alias", property:"innerHTML"},
+							{id:"verifyCode", dataName:"verifyCode", property:"innerHTML"}
+						]
+			};
+		binding4AddAccount = {
+			rootPath : "addAccount",
+			config   : [
+				{id:"accountId.done", dataName:"confirm.accountId", property:"innerHTML"},
+				{id:"alias.done", dataName:"confirm.alias", property:"innerHTML"},
+				{id:"dialogMsg", dataName:"message", property:"innerHTML"}
+			]
+		}
+	//-->
+	</script>
+
+	<script><!--
+		dojo.require("dojo.parser");
+
+		dojo.require("com.ibm.btt.store.BTTFlowStore");
+		dojo.require("com.ibm.btt.store.BTTOperationStore");
+		dojo.require("com.ibm.btt.store.util.BTTClientDataUtil");
+		dojo.require("dojo.data.ObjectStore");
+
+		dojo.require("dijit.form.Button");
+		dojo.require("dijit.form.Select");
+	
+		dojo.require("dijit.layout.StackContainer");
+		dojo.require("dijit.layout.ContentPane");
+		dojo.require("dijit.form.TextBox");
+		dojo.require("dijit.Dialog");
+
+		function doSubmit() {
+			//submit
+			serverStore.fireFlowEvent2(
+					"done",
+					dojo.formToObject("cxAcct"),
+					"bindingForStep3",
+					//onComplete function
+					function() {
+						//show page
+						container.forward();
+					}
+				);
+		}
+
+		function addAccount() {
+			serverStore.fireFlowEvent2(
+					"done",
+					dojo.formToObject("confirm"),
+					binding4AddAccount,
+					function(response) {
+						console.log("response", response);
+						if ( Number(response[0].status) >= 0 ) {
+							//finished
+							container.forward();
+						} else {
+							myDialog.show();
+						}
+					}
+				);
+			}
+	</script>
+
+	<!-- use for get account type list -->
+	<div data-dojo-type="com.ibm.btt.store.BTTFlowStore"
+		 data-dojo-id="serverStore"
+		 data-dojo-props="contextPath:'/TestChart',
+		 		flowId:'accountFlow',
+		 		dataRootPath:'typeListFlow',
+		 		bindingCfg : {
+					bindingCfg : {
+						rootPath: 'listData',
+						config: [
+									{id:'numberTextBox01', dataName:'field01', property:'value'},
+									{id:'numberTextBox01', dataName:'field02', property:'tooltip'},
+									{id:'accountId', dataName:'accountId', property:'value'}
+								]
+					}
+		 		}">
+	</div>
+
+	<!-- object store -->
+	<div data-dojo-type="dojo.data.ObjectStore"
+		 data-dojo-id="storeAdapter"
+		 data-dojo-props="objectStore:serverStore,labelProperty:'name'"></div>
+
+	<!-- use for add new account -->
+	<div data-dojo-type="com.ibm.btt.store.BTTOperationStore"
+		 data-dojo-id="addAccountOp"
+		 data-dojo-props="contextPath:'/TestChart',operationName:'AddAccountOp'"></div>
+
+	<div dojoType="dijit.layout.StackContainer" style="width: 100%; height: 400px;" jsId="container">
+	    <div dojoType="dijit.layout.ContentPane" title="tab #1">
+			<span>第一步:请选择账户类型</span>
+			<br>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;账户类型：</span>
+			<div dojoType="dijit.form.Select"
+				 store="storeAdapter" style="width:200px" tooltip="test"></div>
+	    	<form id="cxAcct">
+	    		<div>第二步：填写新追加账户信息</div>
+		    	<span>&nbsp;&nbsp;&nbsp;&nbsp;账&nbsp;&nbsp;&nbsp;&nbsp;户：</span>
+		    	<input dojoType="dijit.form.TextBox" name="accountId"/>
+		    	<br>
+		    	<br>
+		    	<span>&nbsp;&nbsp;&nbsp;&nbsp;取款密码：</span>
+		    	<input dojoType="dijit.form.TextBox" name="password" type="password"/>
+		    	<br>
+		    	<br>
+		    	<span>&nbsp;&nbsp;&nbsp;&nbsp;别&nbsp;&nbsp;&nbsp;&nbsp;名：</span>
+		    	<input dojoType="dijit.form.TextBox" name="alias"/>
+		    	<br>
+		    	<br>
+		    	<button dojoType="dijit.form.Button" onclick="doSubmit">确定</button>
+	    	</form>
+	    </div>
+	    <div dojoType="dijit.layout.ContentPane" title="tab #2">
+	    	<form id="confirm">
+	    		<div>第三步：验证信息</div>
+	    		<div>
+	    			<span>&nbsp;&nbsp;&nbsp;&nbsp;账&nbsp;&nbsp;&nbsp;&nbsp;户：</span><span id="accountId" name="accountType"></span>
+	    		</div>
+	    		<div>
+	    			<span>&nbsp;&nbsp;&nbsp;&nbsp;别&nbsp;&nbsp;&nbsp;&nbsp;名：</span><span id="alias" name="alias"></span>
+	    		</div>
+	    		<div>
+	    			<span>&nbsp;&nbsp;&nbsp;&nbsp;验证码 (<span id="verifyCode"></span>):</span>
+	    			<spa dojoType="dijit.form.TextBox" name="verifyCode"/>
+	    		</div>
+
+				<button dojoType="dijit.form.Button" onclick="addAccount">确定</button>
+	    	</form>
+	    </div>
+	    <div dojoType="dijit.layout.ContentPane" title="tab #2">
+	    	<h3>成功添加新帐户</h3>
+	    	<span id="accountId.done"></span>
+	    	<span id="alias.done"></span>
+	    </div>
+	</div>
+	
+	<!-- Dialog -->
+	<div data-dojo-type="dijit.Dialog"
+		 data-dojo-id="myDialog" data-dojo-props="title:'Error',style:'width:300px;',onClick:function(){myDialog.hide();}">
+		<div class="dijitDialogPaneContentArea" style="height:100px;">
+		    <span id="dialogMsg"></span>
+		</div>
+	    <div class="dijitDialogPaneActionBar">
+	        <button data-dojo-type="dijit.form.Button" id="ok">OK</button>
+	    </div>
+	</div>
+</body>
+</html>

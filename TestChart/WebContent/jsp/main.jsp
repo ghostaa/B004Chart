@@ -9,7 +9,7 @@
 <body>
 	<a href="B004Chart/Test.jsp">Test</a> <br/>
 	<a href="Columns/Columns.jsp">Columns</a> <br/>
-	<a href="Columns/ColumnsGrid.jsp">ColumnsGrid</a> <br/>
+	<a href="Columns/ColumnsHorizontalGrid.jsp">ColumnsHorizontalGrid</a> <br/>
 	<a href="Mix/Mix.jsp">Mix</a> <br/>
 </body>
 </html>

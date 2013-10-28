@@ -8,8 +8,25 @@
 </head>
 <body>
 	<a href="B004Chart/Test.jsp">Test</a> <br/>
-	<a href="Columns/Columns.jsp">Columns</a> <br/>
-	<a href="Columns/ColumnsHorizontalGrid.jsp">ColumnsHorizontalGrid</a> <br/>
-	<a href="Mix/Mix.jsp">Mix</a> <br/>
+	<h3>Columns</h3>
+	<ul>
+		<li><a href="Columns/Columns.jsp">Columns</a> <br/></li>
+		<li><a href="Columns/ColumnsHorizontalGrid.jsp">ColumnsHorizontalGrid</a> <br/></li>
+		<li><a href="Columns/ColumnsPlot.jsp">ColumnsPlot</a> <br/></li>
+		<li><a href="Columns/ColumnSeries.jsp">ColumnSeries</a> <br/></li>
+	</ul>
+	<h3>Lines</h3>
+	<ul>	
+		<li><a href="Lines/Lines.jsp">Lines</a> <br/></li>
+	</ul>
+	
+	<h3>Pie</h3>
+	<ul>	
+		<li><a href="pie/Pie.jsp">Pie</a> <br/></li>
+	</ul>
+	<h3>Mix</h3>
+	<ul>	
+		<li><a href="Mix/Mix.jsp">Mix</a> <br/></li>
+	</ul>
 </body>
 </html>

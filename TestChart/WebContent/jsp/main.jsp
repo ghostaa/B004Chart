@@ -29,6 +29,10 @@
 	<ul>	
 		<li><a href="Mix/Mix.jsp">Mix</a> <br/></li>
 	</ul>
+	<h3>Bars</h3>
+	<ul>
+		<li><a href="bars/Bars.jsp">Bars</a></li>
+	</ul>
 
 </body>
 </html>

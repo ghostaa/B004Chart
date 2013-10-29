@@ -176,7 +176,7 @@
         <bttdojo:label id="ColumnsVerticalGrid_label02" text="Microticks ,Minorticks=false Majortocks=true"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-        <bttdojo:label id="ColumnsVerticalGrid_label03" text="Label"/>
+        <bttdojo:label id="ColumnsVerticalGrid_label03" text="minortickstep=50 microtickstep=10"/>
       </div>
     </div>
     <div class="BTTRowStyle" role="presentation">
@@ -231,6 +231,17 @@
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="ColumnsVerticalGrid_panel13" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="ColumnsVerticalGrid_dojox_charting_widget_Chart2D11" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                      <div class="axis" name="y" includeZero="false" vertical="true" title="somethingY" titleOrientation="away"></div>
+                        <div class="plot" name="dojox_charting_widget_plot11" type="Columns"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot11" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ColumnsVerticalGrid_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
     <div class="BTTRowStyle" role="presentation">
@@ -244,6 +255,7 @@
         <bttdojo:label id="ColumnsVerticalGrid_label07" text="maxLabelCharCount=2"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="ColumnsVerticalGrid_label08" text="titleOriental=away"/>
       </div>
     </div>
   </div>

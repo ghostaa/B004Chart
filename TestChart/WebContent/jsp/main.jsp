@@ -12,6 +12,7 @@
 	<ul>
 		<li><a href="Columns/Columns.jsp">Columns</a> <br/></li>
 		<li><a href="Columns/ColumnsHorizontalGrid.jsp">ColumnsHorizontalGrid</a> <br/></li>
+		<li><a href="Columns/ColumnsVerticalGrid.jsp">ColumnsVerticalGrid</a> <br/></li>
 		<li><a href="Columns/ColumnsPlot.jsp">ColumnsPlot</a> <br/></li>
 		<li><a href="Columns/ColumnSeries.jsp">ColumnSeries</a> <br/></li>
 	</ul>
@@ -28,5 +29,6 @@
 	<ul>	
 		<li><a href="Mix/Mix.jsp">Mix</a> <br/></li>
 	</ul>
+
 </body>
 </html>

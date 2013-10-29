@@ -24,6 +24,15 @@
 	<h3>Pie</h3>
 	<ul>	
 		<li><a href="pie/Pie.jsp">Pie</a> <br/></li>
+		<li><a href="pie/PiePlot.jsp">PiePlot</a> <br/></li>
+	</ul>
+	<h3>DHLC</h3>
+	<ul>	
+		<li><a href="OHLC/OHLCPlot.jsp">OHLCPlot</a> <br/></li>
+	</ul>
+	<h3>DHLC</h3>
+	<ul>	
+		<li><a href="Bubble/BubblePlot.jsp">BubblePlot</a> <br/></li>
 	</ul>
 	<h3>Mix</h3>
 	<ul>	

@@ -101,7 +101,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ColumnsPlot_dojox_charting_widget_Chart2D02" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" tension="X" name="dojox_charting_widget_plot02" type="Columns" shadow="{dx:2,dy:2,color:'#FF0000'}"></div>
+                        <div class="plot" tension="X" name="dojox_charting_widget_plot02" type="Columns" Shadow="true" shadow="{dx:2,dy:2,color:'#FF0000'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot02"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot02"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot02" scale="1.5"></div>

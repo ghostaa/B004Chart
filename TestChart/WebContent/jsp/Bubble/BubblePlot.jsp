@@ -45,70 +45,90 @@
 		dojo.require("dojox.charting.action2d.Shake");
 	</script>
 
-  <div id="Pie_bttStoreWidget" data-dojo-props="operationName:'TableListOp',contextPath:'/TestChart'" data-dojo-type="com.ibm.btt.store.BTTOperationStore"></div>
-  <div role="presentation" id="Pie_panel" class="BTTTableStyle">
+  <div id="BubblePlot_bttStoreWidget" data-dojo-props="operationName:'TableListOp',contextPath:'/TestChart'" data-dojo-type="com.ibm.btt.store.BTTOperationStore"></div>
+  <div role="presentation" id="BubblePlot_panel" class="BTTTableStyle">
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="Pie_panel01" class="BTTTableStyle">
+          <div role="presentation" id="BubblePlot_panel01" class="BTTTableStyle">
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-                <div style="width:500px;height:500px;" id="Pie_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                      <div class="axis" name="x" includeZero="false"></div>
-                      <div class="axis" name="y" includeZero="false" vertical="true"></div>
-                      <div class="plot" type="Grid" name="grid"></div>
-                        <div class="plot" name="dojox_charting_widget_plot" type="Pie" markers="true" labelOffset="-20" fill="'#FF0080'" radius="200"></div>
+                <div style="width:400px;height:300px;" id="BubblePlot_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" name="dojox_charting_widget_plot" type="Bubble" markers="true"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot"></div>
-                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot" HighlightColor="#8000FF"></div>
-                      <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('Pie_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
+                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot"></div>
+                        <div class="action" type="Shake" plot="dojox_charting_widget_plot"></div>
+                        <div class="action" type="Magnify" plot="dojox_charting_widget_plot" scale="1.5"></div>
+                        <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot" scale="1.5" shift="0"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('BubblePlot_bttStoreWidget'),mappingOptions:{'value':{'size':'size','x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
             </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="Pie_panel02" class="BTTTableStyle">
+          <div role="presentation" id="BubblePlot_panel02" class="BTTTableStyle">
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="Pie_panel03" class="BTTTableStyle">
+          <div role="presentation" id="BubblePlot_panel03" class="BTTTableStyle">
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="Pie_panel04" class="BTTTableStyle">
-          </div>
-      </div>
-    </div>
-    <div class="BTTRowStyle" role="presentation">
-      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-      </div>
-      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="Pie_panel05" class="BTTTableStyle">
-          </div>
-      </div>
-      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="Pie_panel06" class="BTTTableStyle">
-          </div>
-      </div>
-      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="Pie_panel07" class="BTTTableStyle">
+          <div role="presentation" id="BubblePlot_panel04" class="BTTTableStyle">
           </div>
       </div>
     </div>
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="Pie_panel08" class="BTTTableStyle">
+          <div role="presentation" id="BubblePlot_panel05" class="BTTTableStyle">
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="Pie_panel09" class="BTTTableStyle">
+          <div role="presentation" id="BubblePlot_panel06" class="BTTTableStyle">
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="Pie_panel10" class="BTTTableStyle">
+          <div role="presentation" id="BubblePlot_panel07" class="BTTTableStyle">
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="Pie_panel11" class="BTTTableStyle">
+          <div role="presentation" id="BubblePlot_panel08" class="BTTTableStyle">
+          </div>
+      </div>
+    </div>
+    <div class="BTTRowStyle" role="presentation">
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="BubblePlot_panel14" class="BTTTableStyle">
+          </div>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="BubblePlot_panel13" class="BTTTableStyle">
+          </div>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="BubblePlot_panel11" class="BTTTableStyle">
+          </div>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="BubblePlot_panel12" class="BTTTableStyle">
+          </div>
+      </div>
+    </div>
+    <div class="BTTRowStyle" role="presentation">
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="BubblePlot_panel09" class="BTTTableStyle">
+          </div>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="BubblePlot_panel10" class="BTTTableStyle">
+          </div>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="BubblePlot_panel16" class="BTTTableStyle">
+          </div>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="BubblePlot_panel15" class="BTTTableStyle">
           </div>
       </div>
     </div>

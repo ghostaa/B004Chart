@@ -58,7 +58,7 @@
                       <div class="plot" type="Grid" name="grid"></div>
                         <div class="plot" name="dojox_charting_widget_plot" type="Lines" markers="true"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot"></div>
-                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot"></div>
+                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot" highlight="#FFFF00"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot" scale="1.5"></div>
                         <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot" scale="1.5" shift="0"></div>
@@ -173,7 +173,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="Lines_dojox_charting_widget_Chart2D05" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot05" type="Lines" markers="true"  shadow="{dx:3,dy:3,width:5,color:'#FF0000'}"></div>
+                        <div class="plot" name="dojox_charting_widget_plot05" type="Lines" markers="true" Shadow="true" shadow="{dx:3,dy:3,width:5,color:'#FF0000'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot05"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot05"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot05"></div>

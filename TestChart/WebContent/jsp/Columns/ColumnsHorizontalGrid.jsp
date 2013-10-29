@@ -173,6 +173,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ColumnsHorizontalGrid_dojox_charting_widget_Chart2D08" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                      <div class="axis" name="x" includeZero="false" min="30" max="35" majorTickStep="4" minorLabels="true" minorTicks="false" minorTickStep="2" microTicks="true" microTickStep="1"></div>
                         <div class="plot" name="dojox_charting_widget_plot08" type="Columns"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot08" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ColumnsHorizontalGrid_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>

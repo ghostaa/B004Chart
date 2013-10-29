@@ -52,7 +52,7 @@
         <div style="width:400px;height:300px;" id="Test_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                 <div class="plot" tension="x" name="dojox_charting_widget_plot" type="Bars"></div>
                 <div class="action" type="Tooltip" plot="dojox_charting_widget_plot"></div>
-                <div class="action" type="Highlight" plot="dojox_charting_widget_plot" HighlightColor="#8000FF"></div>
+                <div class="action" type="Highlight" plot="dojox_charting_widget_plot" HighlightColor="#00FF40"></div>
               <div name="series" class="series" plot="dojox_charting_widget_plot" fill="'#FF00FF'" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('Test_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
         </div>
       </div>

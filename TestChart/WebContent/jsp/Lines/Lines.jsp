@@ -56,7 +56,7 @@
                       <div class="axis" name="x" includeZero="false" title="Amount" titleFontColor="#FF0080"></div>
                       <div class="axis" name="y" includeZero="false" vertical="true" title="name" titleFontColor="#FF8000"></div>
                       <div class="plot" type="Grid" name="grid"></div>
-                        <div class="plot" name="dojox_charting_widget_plot" type="Lines" markers="true"></div>
+                        <div class="plot" name="dojox_charting_widget_plot" type="Lines" markers="true" labels="false"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot" highlight="#FFFF00"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot"></div>
@@ -73,7 +73,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="Lines_dojox_charting_widget_Chart2D01" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" tension="X" name="dojox_charting_widget_plot01" type="Lines"></div>
+                        <div class="plot" tension="X" name="dojox_charting_widget_plot01" type="Lines" labels="false"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot01"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('Lines_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
@@ -86,7 +86,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="Lines_dojox_charting_widget_Chart2D02" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" tension="x" name="dojox_charting_widget_plot02" type="Lines"></div>
+                        <div class="plot" tension="x" name="dojox_charting_widget_plot02" type="Lines" labels="false"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot02" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('Lines_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
@@ -98,7 +98,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="Lines_dojox_charting_widget_Chart2D03" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" tension="S" name="dojox_charting_widget_plot03" type="Lines"></div>
+                        <div class="plot" tension="S" name="dojox_charting_widget_plot03" type="Lines" labels="false"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot03" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('Lines_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
@@ -156,9 +156,9 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="Lines_dojox_charting_widget_Chart2D04" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot04" type="Lines" markers="true"></div>
+                        <div class="plot" name="dojox_charting_widget_plot04" type="Lines" markers="true" labels="false"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot04"></div>
-                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot04" HighlightColor="#FF0000"></div>
+                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot04" highlight="#FF0000"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot04"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot04" scale="1.5"></div>
                         <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot04" scale="1.5" shift="0"></div>
@@ -173,7 +173,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="Lines_dojox_charting_widget_Chart2D05" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot05" type="Lines" markers="true" Shadow="true" shadow="{dx:3,dy:3,width:5,color:'#FF0000'}"></div>
+                        <div class="plot" name="dojox_charting_widget_plot05" type="Lines" markers="true" labels="false" shadow="{dx:3,dy:3,width:5,color:'#FF0000'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot05"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot05"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot05"></div>

@@ -45,85 +45,74 @@
 		dojo.require("dojox.charting.action2d.Shake");
 	</script>
 
-  <div id="OHLCPlot_bttStoreWidget" data-dojo-props="operationName:'StockOp',contextPath:'/TestChart'" data-dojo-type="com.ibm.btt.store.BTTOperationStore"></div>
-  <div role="presentation" id="OHLCPlot_panel" class="BTTTableStyle">
+  <div id="CandlesticksPlot_bttStoreWidget" data-dojo-props="operationName:'StockOp',contextPath:'/TestChart'" data-dojo-type="com.ibm.btt.store.BTTOperationStore"></div>
+  <div role="presentation" id="CandlesticksPlot_panel" class="BTTTableStyle">
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel01" class="BTTTableStyle">
+          <div role="presentation" id="CandlesticksPlot_panel01" class="BTTTableStyle">
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-                <div style="width:400px;height:300px;" id="OHLCPlot_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot" type="OHLC" labels="false"></div>
-                      <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('OHLCPlot_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
+                <div style="width:400px;height:300px;" id="CandlesticksPlot_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" name="dojox_charting_widget_plot" type="Candlesticks" markers="true" labels="false"></div>
+                        <div class="action" type="Tooltip" plot="dojox_charting_widget_plot"></div>
+                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot"></div>
+                        <div class="action" type="Shake" plot="dojox_charting_widget_plot"></div>
+                        <div class="action" type="Magnify" plot="dojox_charting_widget_plot" scale="1.5"></div>
+                        <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot" scale="1.5" shift="0"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('CandlesticksPlot_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
                 </div>
               </div>
             </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel02" class="BTTTableStyle">
+          <div role="presentation" id="CandlesticksPlot_panel02" class="BTTTableStyle">
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel03" class="BTTTableStyle">
-          </div>
-      </div>
-      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel04" class="BTTTableStyle">
+          <div role="presentation" id="CandlesticksPlot_panel03" class="BTTTableStyle">
           </div>
       </div>
     </div>
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel05" class="BTTTableStyle">
+          <div role="presentation" id="CandlesticksPlot_panel04" class="BTTTableStyle">
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel06" class="BTTTableStyle">
+          <div role="presentation" id="CandlesticksPlot_panel05" class="BTTTableStyle">
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel07" class="BTTTableStyle">
-          </div>
-      </div>
-      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel08" class="BTTTableStyle">
+          <div role="presentation" id="CandlesticksPlot_panel06" class="BTTTableStyle">
           </div>
       </div>
     </div>
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel09" class="BTTTableStyle">
+          <div role="presentation" id="CandlesticksPlot_panel07" class="BTTTableStyle">
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel10" class="BTTTableStyle">
+          <div role="presentation" id="CandlesticksPlot_panel08" class="BTTTableStyle">
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel11" class="BTTTableStyle">
-          </div>
-      </div>
-      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel12" class="BTTTableStyle">
+          <div role="presentation" id="CandlesticksPlot_panel09" class="BTTTableStyle">
           </div>
       </div>
     </div>
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel13" class="BTTTableStyle">
+          <div role="presentation" id="CandlesticksPlot_panel10" class="BTTTableStyle">
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel14" class="BTTTableStyle">
+          <div role="presentation" id="CandlesticksPlot_panel11" class="BTTTableStyle">
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel15" class="BTTTableStyle">
-          </div>
-      </div>
-      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="OHLCPlot_panel16" class="BTTTableStyle">
+          <div role="presentation" id="CandlesticksPlot_panel12" class="BTTTableStyle">
           </div>
       </div>
     </div>

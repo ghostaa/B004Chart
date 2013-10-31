@@ -8,6 +8,10 @@
 </head>
 <body>
 	<a href="B004Chart/Test.jsp">Test</a> <br/>
+	<h3>Candlesticks</h3>
+	<ul>	
+		<li><a href="Candlesticks/CandlesticksPlot.jsp">CandlesticksPlot</a> <br/></li>
+	</ul>
 	<h3>Columns</h3>
 	<ul>
 		<li><a href="Columns/Columns.jsp">Columns</a> <br/></li>
@@ -19,6 +23,7 @@
 	<h3>Lines</h3>
 	<ul>	
 		<li><a href="Lines/Lines.jsp">Lines</a> <br/></li>
+		<li><a href="Lines/LinesSeries.jsp">LinesSeries</a> <br/></li>
 	</ul>
 	
 	<h3>Pie</h3>
@@ -30,9 +35,22 @@
 	<ul>	
 		<li><a href="OHLC/OHLCPlot.jsp">OHLCPlot</a> <br/></li>
 	</ul>
-	<h3>DHLC</h3>
+	<h3>StackedLines</h3>
 	<ul>	
+		<li><a href="StackedLines/StackedLinesPlot.jsp">StackedLinesPlot</a> <br/></li>
+	</ul>
+	<h3>Bubble</h3>
+	<ul>	
+		<li><a href="Bubble/BubbleGrid.jsp">BubbleGrid</a> <br/></li>
 		<li><a href="Bubble/BubblePlot.jsp">BubblePlot</a> <br/></li>
+	</ul>
+	<h3>Markers</h3>
+	<ul>	
+		<li><a href="Markers/MarkersPlot.jsp">MarkersPlot</a> <br/></li>
+	</ul>
+	<h3>MarkersOnly</h3>
+	<ul>	
+		<li><a href="MarkersOnly/MarkersOnlyPlot.jsp">MarkersOnlyPlot</a> <br/></li>
 	</ul>
 	<h3>Mix</h3>
 	<ul>	

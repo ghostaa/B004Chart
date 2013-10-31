@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="82,93,1626,666" isRuleDirty="false">
+<XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="79,102,1626,666" isRuleDirty="false">
   <styles/>
   <container name="Panel" id="panel">
     <gridData heightHint="666" verticalAlignment="1" widthHint="1626" heightType="AutoSize" widthType="AutoSize" relativeWidth="0" relativeHeight="0" inlineStyle="{}" horizontalIndentType="FixedSize"/>

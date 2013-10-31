@@ -46,6 +46,7 @@
 	</script>
 
   <div id="BubblePlot_bttStoreWidget" data-dojo-props="operationName:'TableListOp',contextPath:'/TestChart'" data-dojo-type="com.ibm.btt.store.BTTOperationStore"></div>
+  <div id="BubblePlot_bttStoreWidget01" data-dojo-props="operationName:'AnnualStatementOp',contextPath:'/TestChart'" data-dojo-type="com.ibm.btt.store.BTTOperationStore"></div>
   <div role="presentation" id="BubblePlot_panel" class="BTTTableStyle">
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
@@ -53,12 +54,12 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="BubblePlot_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot" type="Bubble" markers="true"></div>
+                      <div class="axis" name="x" includeZero="false"></div>
+                      <div class="axis" name="y" includeZero="false" vertical="true"></div>
+                        <div class="plot" name="dojox_charting_widget_plot" type="Bubble" markers="true" labels="false" precision="2"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot"></div>
-                        <div class="action" type="Magnify" plot="dojox_charting_widget_plot" scale="1.5"></div>
-                        <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot" scale="1.5" shift="0"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('BubblePlot_bttStoreWidget'),mappingOptions:{'value':{'size':'size','x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
@@ -67,10 +68,30 @@
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="BubblePlot_panel02" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="BubblePlot_dojox_charting_widget_Chart2D03" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" tension="X" name="dojox_charting_widget_plot03" type="Bubble" markers="true" labels="false" fill="'#FF8000'"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot03" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('BubblePlot_bttStoreWidget'),mappingOptions:{'value':{'size':'size','x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="BubblePlot_panel03" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="BubblePlot_dojox_charting_widget_Chart2D04" theme="dojox.charting.themes.MiamiNice" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" name="dojox_charting_widget_plot04" type="Bubble" labels="false"></div>
+                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot04" highlight="#00FF00"></div>
+                        <div class="action" type="Shake" plot="dojox_charting_widget_plot04"></div>
+                        <div class="action" type="Magnify" plot="dojox_charting_widget_plot04" scale="1.5"></div>
+                        <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot04" scale="1.5" shift="0"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot04" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('BubblePlot_bttStoreWidget'),mappingOptions:{'value':{'size':'size','x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
@@ -80,11 +101,68 @@
     </div>
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="BubblePlot_panel17" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <bttdojo:label id="BubblePlot_label02" text="shake=true,precision=2,tooltip=true"/>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="BubblePlot_panel18" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <bttdojo:label id="BubblePlot_label03" text="fill=orange,tension=X"/>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="BubblePlot_label04" text="HighLight=true,hight color=green"/>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+      </div>
+    </div>
+    <div class="BTTRowStyle" role="presentation">
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="BubblePlot_panel05" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="BubblePlot_dojox_charting_widget_Chart2D01" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                      <div class="axis" name="x" includeZero="false" title="x=empty(index)"></div>
+                      <div class="axis" name="y" includeZero="false" vertical="true"></div>
+                      <div class="plot" type="Grid" name="grid"></div>
+                        <div class="plot" name="dojox_charting_widget_plot01" type="Bubble" markers="true" labels="false" animate="true"></div>
+                        <div class="action" type="Tooltip" plot="dojox_charting_widget_plot01"></div>
+                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot01"></div>
+                        <div class="action" type="Shake" plot="dojox_charting_widget_plot01"></div>
+                        <div class="action" type="Magnify" plot="dojox_charting_widget_plot01" scale="1.5"></div>
+                        <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot01" scale="5" shift="5"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot01" fill="'#008000'" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('BubblePlot_bttStoreWidget01'),mappingOptions:{'value':{'size':'size','tooltip':'month','x':'!INDEX','y':'profit'}},rootPath:'AnnualStatementList'})})"></div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="BubblePlot_panel06" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="BubblePlot_dojox_charting_widget_Chart2D02" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                      <div class="axis" name="x" includeZero="false"></div>
+                      <div class="axis" name="y" includeZero="false" vertical="true" title="x=reversal odd and even "></div>
+                      <div class="plot" type="Grid" name="grid"></div>
+                        <div class="plot" name="dojox_charting_widget_plot02" type="Bubble" markers="true" labels="false" shadow="{dx:5,dy:5,width:5,color:'#FF0000'}"></div>
+                        <div class="action" type="Tooltip" plot="dojox_charting_widget_plot02"></div>
+                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot02"></div>
+                        <div class="action" type="Shake" plot="dojox_charting_widget_plot02"></div>
+                        <div class="action" type="Magnify" plot="dojox_charting_widget_plot02" scale="5"></div>
+                        <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot02" scale="1.5" shift="0"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot02" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('BubblePlot_bttStoreWidget01'),mappingOptions:{'value':{'size':'size','x':'weight','y':'profit'}},rootPath:'AnnualStatementList'})})"></div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
@@ -99,10 +177,20 @@
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="BubblePlot_panel14" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <bttdojo:label id="BubblePlot_label" text="move slice=true,scale=5,shift=5,Animate=true"/>
+              </div>
+            </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="BubblePlot_panel13" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <bttdojo:label id="BubblePlot_label01" text="Magnify scale=5,shadow=true,x=5,y=5,width=5,color=red"/>
+              </div>
+            </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">

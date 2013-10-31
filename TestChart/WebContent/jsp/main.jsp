@@ -8,6 +8,10 @@
 </head>
 <body>
 	<a href="B004Chart/Test.jsp">Test</a> <br/>
+	<h3>Areas</h3>
+	<ul>	
+		<li><a href="Areas/AreasPlot.jsp">AreasPlot</a> <br/></li>
+	</ul>
 	<h3>Candlesticks</h3>
 	<ul>	
 		<li><a href="Candlesticks/CandlesticksPlot.jsp">CandlesticksPlot</a> <br/></li>
@@ -39,6 +43,10 @@
 	<ul>	
 		<li><a href="StackedLines/StackedLinesGrid.jsp">StackedLinesGrid</a> <br/></li>
 		<li><a href="StackedLines/StackedLinesPlot.jsp">StackedLinesPlot</a> <br/></li>
+	</ul>
+	<h3>StackedAreas</h3>
+	<ul>	
+		<li><a href="StackedAreas/StackedAreasPlot.jsp">StackedAreasPlot</a> <br/></li>
 	</ul>
 	<h3>Bubble</h3>
 	<ul>	

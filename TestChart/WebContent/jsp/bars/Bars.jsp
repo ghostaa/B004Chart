@@ -153,7 +153,6 @@
                       <div class="axis" name="y" includeZero="false" vertical="true" min="10" max="20"></div>
                         <div class="plot" name="dojox_charting_widget_plot07" type="Bars" gap="10" minBarSize="50" maxBarSize="100"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot07"></div>
-                        <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot07"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot07" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('Bars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
@@ -171,6 +170,7 @@
         <bttdojo:label id="Bars_label05" text="gap=5 minbarsize=10 maxbarsize=100"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="Bars_label08" text="gap=10 maxbarSize=100 minbarSize=50"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
       </div>
@@ -184,6 +184,7 @@
                       <div class="axis" name="y" includeZero="false" vertical="true" min="10" max="30"></div>
                         <div class="plot" name="dojox_charting_widget_plot06" type="Bars" Shadow="true" shadow="{dx:1,dy:1,width:3}"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot06" scale="10"></div>
+                        <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot06" scale="10" shift="10"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot06" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('Bars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
@@ -192,6 +193,15 @@
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="Bars_panel08" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="Bars_dojox_charting_widget_Chart2D08" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                      <div class="axis" name="y" includeZero="false" vertical="true" min="10" max="30"></div>
+                        <div class="plot" name="dojox_charting_widget_plot08" type="Bars" animate="true"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot08" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('Bars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
@@ -201,8 +211,10 @@
     </div>
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="Bars_label07" text="Magnify,MoveSlice=true"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="Bars_label06" text="animate=true"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
       </div>

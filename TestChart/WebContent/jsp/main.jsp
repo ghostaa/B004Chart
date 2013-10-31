@@ -37,6 +37,7 @@
 	</ul>
 	<h3>StackedLines</h3>
 	<ul>	
+		<li><a href="StackedLines/StackedLinesGrid.jsp">StackedLinesGrid</a> <br/></li>
 		<li><a href="StackedLines/StackedLinesPlot.jsp">StackedLinesPlot</a> <br/></li>
 	</ul>
 	<h3>Bubble</h3>

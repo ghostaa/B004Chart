@@ -46,6 +46,7 @@
 	</script>
 
   <div id="MarkersOnlyPlot_bttStoreWidget" data-dojo-props="operationName:'TableListOp',contextPath:'/TestChart'" data-dojo-type="com.ibm.btt.store.BTTOperationStore"></div>
+  <div id="MarkersOnlyPlot_bttStoreWidget01" data-dojo-props="operationName:'AnnualStatementOp',contextPath:'/TestChart'" data-dojo-type="com.ibm.btt.store.BTTOperationStore"></div>
   <div role="presentation" id="MarkersOnlyPlot_panel" class="BTTTableStyle">
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
@@ -67,6 +68,14 @@
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="MarkersOnlyPlot_panel02" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="MarkersOnlyPlot_dojox_charting_widget_Chart2D01" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" name="dojox_charting_widget_plot01" type="MarkersOnly" labels="false"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('MarkersOnlyPlot_bttStoreWidget01'),mappingOptions:{'value':{'x':'weight','y':'profit'}},rootPath:'AnnualStatementList'})})"></div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">

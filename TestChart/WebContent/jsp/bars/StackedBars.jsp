@@ -227,8 +227,24 @@
     </div>
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <div style="width:400px;height:300px;" id="StackedBars_dojox_charting_widget_Chart2D09" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                <div class="plot" name="dojox_charting_widget_plot09" type="StackedBars"></div>
+              <div name="series" class="series" plot="dojox_charting_widget_plot09" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
+              <div name="series" class="series" plot="dojox_charting_widget_plot09" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
+        </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="StackedBars_panel10" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="StackedBars_dojox_charting_widget_Chart2D10" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" name="dojox_charting_widget_plot10" type="StackedBars"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot10" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
+                      <div name="series01" class="series" plot="dojox_charting_widget_plot10" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
       </div>

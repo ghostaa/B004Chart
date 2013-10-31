@@ -57,7 +57,7 @@
                 <div style="width:400px;height:300px;" id="ColumnsHorizontalGrid_dojox_charting_widget_Chart2D03" theme="dojox.charting.themes.Claro" vMajorLines="false" titleFontColor="#0080FF" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="x" includeZero="false" title="vMajorLines=false,vMinorLines=false" titleFontColor="#0080FF"></div>
                       <div class="plot" type="Grid" name="grid" vMajorLines="false"></div>
-                        <div class="plot" name="dojox_charting_widget_plot03" type="Columns" markers="true"></div>
+                        <div class="plot" name="dojox_charting_widget_plot03" type="Columns" markers="true" labels="false"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot03"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot03"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot03"></div>
@@ -76,7 +76,7 @@
                 <div style="width:400px;height:300px;" id="ColumnsHorizontalGrid_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" titleFontColor="#FF0000" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="x" includeZero="false" title="vMajorLines=true,vMinorLines=false" titleGap="5" titleFontColor="#FF0000" titleOrientation="axis"></div>
                       <div class="plot" type="Grid" name="grid"></div>
-                        <div class="plot" name="dojox_charting_widget_plot" type="Columns"></div>
+                        <div class="plot" name="dojox_charting_widget_plot" type="Columns" labels="false"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ColumnsHorizontalGrid_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
@@ -90,7 +90,7 @@
                 <div style="width:400px;height:300px;" id="ColumnsHorizontalGrid_dojox_charting_widget_Chart2D01" theme="dojox.charting.themes.Claro" vMajorLines="false" vMinorLines="true" titleFontColor="#00FF00" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="x" includeZero="false" title="vMajorLines=false,vMinorLines=true" titleFontColor="#00FF00" titleOrientation="away"></div>
                       <div class="plot" type="Grid" name="grid" vMajorLines="false" vMinorLines="true"></div>
-                        <div class="plot" name="dojox_charting_widget_plot01" type="Columns"></div>
+                        <div class="plot" name="dojox_charting_widget_plot01" type="Columns" labels="false"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ColumnsHorizontalGrid_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
@@ -104,7 +104,7 @@
                 <div style="width:400px;height:300px;" id="ColumnsHorizontalGrid_dojox_charting_widget_Chart2D02" theme="dojox.charting.themes.Claro" vMinorLines="true" titleFontColor="#008040" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="x" includeZero="false" title="vMajorLines=true,vMinorLines=true" titleFontColor="#008040"></div>
                       <div class="plot" type="Grid" name="grid" vMinorLines="true"></div>
-                        <div class="plot" name="dojox_charting_widget_plot02" type="Columns" markers="true"></div>
+                        <div class="plot" name="dojox_charting_widget_plot02" type="Columns" markers="true" labels="false"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot02"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot02"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot02" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ColumnsHorizontalGrid_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
@@ -123,7 +123,7 @@
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ColumnsHorizontalGrid_dojox_charting_widget_Chart2D05" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="x" includeZero="false" majorTickStep="20" minorTickStep="4"></div>
-                        <div class="plot" name="dojox_charting_widget_plot05" type="Columns"></div>
+                        <div class="plot" name="dojox_charting_widget_plot05" type="Columns" labels="false"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot05" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ColumnsHorizontalGrid_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
@@ -146,7 +146,7 @@
                 <div style="width:400px;height:300px;" id="ColumnsHorizontalGrid_dojox_charting_widget_Chart2D04" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="x" includeZero="false" min="10" max="20" minorLabels="true" microTicks="true"></div>
                       <div class="plot" type="Grid" name="grid"></div>
-                        <div class="plot" name="dojox_charting_widget_plot04" type="Columns" markers="true"></div>
+                        <div class="plot" name="dojox_charting_widget_plot04" type="Columns" markers="true" labels="false"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot04"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot04"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot04"></div>
@@ -173,15 +173,15 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ColumnsHorizontalGrid_dojox_charting_widget_Chart2D08" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                      <div class="axis" name="x" includeZero="false" min="30" max="35" majorTickStep="4" minorLabels="true" minorTicks="false" minorTickStep="2" microTicks="true" microTickStep="1"></div>
-                        <div class="plot" name="dojox_charting_widget_plot08" type="Columns"></div>
+                      <div class="axis" name="x" includeZero="false" majorTickStep="20" minorLabels="true" minorTickStep="10" microTicks="true" microTickStep="2"></div>
+                        <div class="plot" name="dojox_charting_widget_plot08" type="Columns" labels="false"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot08" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ColumnsHorizontalGrid_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
             </div>
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-                <bttdojo:label id="ColumnsHorizontalGrid_label05" text="Label"/>
+                <bttdojo:label id="ColumnsHorizontalGrid_label05" text="majorTickStep=20,minorTickStep=10,microTickStep=2"/>
               </div>
             </div>
             <div class="BTTRowStyle" role="presentation">
@@ -207,7 +207,7 @@
                       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                         <div style="width:400px;height:300px;" id="ColumnsHorizontalGrid_dojox_charting_widget_Chart2D06" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                               <div class="axis" name="x" includeZero="false" min="10" max="20" titleOrientation="axis" maxLabelSize="1"></div>
-                                <div class="plot" name="dojox_charting_widget_plot06" type="Columns" markers="true"></div>
+                                <div class="plot" name="dojox_charting_widget_plot06" type="Columns" markers="true" labels="false"></div>
                                 <div class="action" type="Tooltip" plot="dojox_charting_widget_plot06"></div>
                                 <div class="action" type="Highlight" plot="dojox_charting_widget_plot06"></div>
                                 <div class="action" type="Shake" plot="dojox_charting_widget_plot06"></div>
@@ -240,7 +240,7 @@
                       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                         <div style="width:400px;height:300px;" id="ColumnsHorizontalGrid_dojox_charting_widget_Chart2D07" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                               <div class="axis" name="x" includeZero="false" min="20" max="30" trailingSymbol="'~'" maxLabelCharCount="1"></div>
-                                <div class="plot" name="dojox_charting_widget_plot07" type="Columns" markers="true"></div>
+                                <div class="plot" name="dojox_charting_widget_plot07" type="Columns" markers="true" labels="false"></div>
                                 <div class="action" type="Tooltip" plot="dojox_charting_widget_plot07"></div>
                                 <div class="action" type="Highlight" plot="dojox_charting_widget_plot07"></div>
                               <div name="series" class="series" plot="dojox_charting_widget_plot07" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ColumnsHorizontalGrid_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>

@@ -59,6 +59,8 @@
 	<h3>Bars</h3>
 	<ul>
 		<li><a href="bars/Bars.jsp">Bars</a></li>
+		<li><a href="bars/ClusteredBars.jsp">ClusteredBars</a></li>
+		<li><a href="bars/StackedBars.jsp">StackedBars</a></li>
 	</ul>
 
 </body>

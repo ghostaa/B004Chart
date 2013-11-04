@@ -58,7 +58,7 @@
                       <div class="plot" type="Grid" name="grid" vMajorLines="false" vMinorLines="true"></div>
                         <div class="plot" name="dojox_charting_widget_plot" type="StackedBars"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
-                      <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
+                      <div name="series1" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@
                         <div class="plot" name="dojox_charting_widget_plot01" type="StackedBars" fill="'#FFFF00'"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot01" HighlightColor="#000000"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
-                      <div name="series" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
+                      <div name="series2" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
                 </div>
               </div>
             </div>

@@ -25,6 +25,16 @@
 		<li><a href="Columns/ColumnsPlot.jsp">ColumnsPlot</a> <br/></li>
 		<li><a href="Columns/ColumnSeries.jsp">ColumnSeries</a> <br/></li>
 	</ul>
+	<h3>ClusteredColunms</h3>
+	<ul>
+	    <li><a href="ClusteredColunms/ClusteredColunmsPlot.jsp">ClusteredColunmsPlot</a></li>
+	    <li><a href="ClusteredColunms/ClusteredColunmsGrid.jsp">ClusteredColunmsGrid</a></li>
+	</ul>
+	<h3>StakedColunms</h3>
+	<ul>
+	    <li><a href="StackedColunms/StackedColunmsPlot.jsp">StackedColunmsPlot</a></li>
+	    <li><a href="StackedColunms/StackedColunmsGrid.jsp">StackedColunmsGrid</a></li>
+	</ul>
 	<h3>Lines</h3>
 	<ul>	
 		<li><a href="Lines/Lines.jsp">Lines</a> <br/></li>

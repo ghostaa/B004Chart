@@ -15,6 +15,7 @@
 	<h3>Candlesticks</h3>
 	<ul>	
 		<li><a href="Candlesticks/CandlesticksPlot.jsp">CandlesticksPlot</a> <br/></li>
+		<li><a href="Candlesticks/CandlesticksGrid.jsp">CandlesticksGrid</a> <br/></li>
 	</ul>
 	<h3>Columns</h3>
 	<ul>
@@ -38,6 +39,7 @@
 	<h3>DHLC</h3>
 	<ul>	
 		<li><a href="OHLC/OHLCPlot.jsp">OHLCPlot</a> <br/></li>
+		<li><a href="OHLC/OHLCGrid.jsp">OHLCGrid</a> <br/></li>
 	</ul>
 	<h3>StackedLines</h3>
 	<ul>	
@@ -56,10 +58,12 @@
 	<h3>Markers</h3>
 	<ul>	
 		<li><a href="Markers/MarkersPlot.jsp">MarkersPlot</a> <br/></li>
+		<li><a href="Markers/MarkersGrid.jsp">MarkersGrid</a> <br/></li>
 	</ul>
 	<h3>MarkersOnly</h3>
 	<ul>	
 		<li><a href="MarkersOnly/MarkersOnlyPlot.jsp">MarkersOnlyPlot</a> <br/></li>
+		<li><a href="MarkersOnly/MarkersOnlyGrid.jsp">MarkersOnlyGrid</a> <br/></li>
 	</ul>
 	<h3>Mix</h3>
 	<ul>	

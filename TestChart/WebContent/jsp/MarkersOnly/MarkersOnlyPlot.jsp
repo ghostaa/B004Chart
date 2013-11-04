@@ -53,13 +53,10 @@
           <div role="presentation" id="MarkersOnlyPlot_panel01" class="BTTTableStyle">
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-                <div style="width:400px;height:300px;" id="MarkersOnlyPlot_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot" type="MarkersOnly" markers="true" labels="false"></div>
+                <div style="width:400px;height:300px;" id="MarkersOnlyPlot_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Chris" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" tension="X" name="dojox_charting_widget_plot" type="MarkersOnly" gap="100" labels="false" fill="'#FF8080'" animate="true"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot"></div>
-                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot"></div>
-                        <div class="action" type="Shake" plot="dojox_charting_widget_plot"></div>
-                        <div class="action" type="Magnify" plot="dojox_charting_widget_plot" scale="1.5"></div>
-                        <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot" scale="1.5" shift="0"></div>
+                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot" highlight="#8080FF"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('MarkersOnlyPlot_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
@@ -68,19 +65,44 @@
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="MarkersOnlyPlot_panel02" class="BTTTableStyle">
+
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="MarkersOnlyPlot_dojox_charting_widget_Chart2D01" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot01" type="MarkersOnly" labels="false"></div>
-                      <div name="series" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('MarkersOnlyPlot_bttStoreWidget01'),mappingOptions:{'value':{'x':'weight','y':'profit'}},rootPath:'AnnualStatementList'})})"></div>
+                        <div class="plot" name="dojox_charting_widget_plot01" type="MarkersOnly" minBarSize="15" labels="false" shadow="{dx:2,dy:2,width:2,color:'#FF0000'}"></div>
+                        <div class="action" type="Tooltip" plot="dojox_charting_widget_plot01"></div>
+                        <div class="action" type="Shake" plot="dojox_charting_widget_plot01"></div>
+                        <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot01" scale="1" shift="1"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('MarkersOnlyPlot_bttStoreWidget'),mappingOptions:{'value':{'tooltip':'label','x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="MarkersOnlyPlot_panel03" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="MarkersOnlyPlot_dojox_charting_widget_Chart2D02" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" name="dojox_charting_widget_plot02" type="MarkersOnly" maxBarSize="100" labels="false"></div>
+                        <div class="action" type="Magnify" plot="dojox_charting_widget_plot02" scale="5"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot02" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('MarkersOnlyPlot_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
             </div>
           </div>
       </div>
+    </div>
+    <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="MarkersOnlyPlot_panel03" class="BTTTableStyle">
-          </div>
+        <bttdojo:label id="MarkersOnlyPlot_label" text="tension=X fill=red tooltips=true highlightcolor=blue animate=true gap=100"/>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="MarkersOnlyPlot_label01" text="shake=true shadow=true mappingtooltip=label MoveSlice=true minBarSize=15"/>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="MarkersOnlyPlot_label02" text="Magnify=true maxBarSize=100"/>
       </div>
     </div>
     <div class="BTTRowStyle" role="presentation">
@@ -95,6 +117,14 @@
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="MarkersOnlyPlot_panel06" class="BTTTableStyle">
           </div>
+      </div>
+    </div>
+    <div class="BTTRowStyle" role="presentation">
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
       </div>
     </div>
     <div class="BTTRowStyle" role="presentation">

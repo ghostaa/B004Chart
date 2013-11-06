@@ -175,6 +175,20 @@
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="ClusteredColunmsGrid_panel08" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="ClusteredColunmsGrid_dojox_charting_widget_Chart2D07" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                      <div class="axis" name="x" includeZero="false" rotation="0" title="somethingX" titleOrientation="away"></div>
+                      <div class="axis" name="y" includeZero="false" vertical="true"></div>
+                      <div class="plot" type="Grid" name="grid"></div>
+                        <div class="plot" name="dojox_charting_widget_plot07" type="ClusteredColumns" labels="false"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot07" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredColunmsGrid_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
+                      <div name="series01" class="series" plot="dojox_charting_widget_plot07" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredColunmsGrid_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
       </div>

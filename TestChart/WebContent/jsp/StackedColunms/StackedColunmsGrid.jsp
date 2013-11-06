@@ -121,6 +121,16 @@
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="StackedColunmsGrid_panel05" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="StackedColunmsGrid_dojox_charting_widget_Chart2D04" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                      <div class="axis" name="x" includeZero="false" rotation="0" title="sonethingX" titleOrientation="away"></div>
+                        <div class="plot" name="dojox_charting_widget_plot04" type="StackedColumns" labels="false"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot04" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedColunmsGrid_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
+                      <div name="series01" class="series" plot="dojox_charting_widget_plot04" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedColunmsGrid_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
@@ -133,7 +143,7 @@
         <bttdojo:label id="StackedColunmsGrid_label03" text="xTitleOrientation=away"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-        <bttdojo:label id="StackedColunmsGrid_label04" text="Label"/>
+        <bttdojo:label id="StackedColunmsGrid_label04" text="XtitleOrientation=away rotation=0"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
         <bttdojo:label id="StackedColunmsGrid_label05" text="Label"/>

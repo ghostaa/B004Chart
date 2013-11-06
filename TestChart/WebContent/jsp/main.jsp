@@ -82,9 +82,15 @@
 	<h3>Bars</h3>
 	<ul>
 		<li><a href="bars/Bars.jsp">Bars</a></li>
-		<li><a href="bars/ClusteredBars.jsp">ClusteredBars</a></li>
-		<li><a href="bars/StackedBars.jsp">StackedBars</a></li>
+		
 	</ul>
-
+	<h3>ClusteredBars</h3>
+	<ul>
+		<li><a href="ClusteredBars/ClusteredBars.jsp">ClusteredBars</a></li>
+	</ul>
+	<h3>StackedBars</h3>
+	<ul>
+		<li><a href="StackedBars/StackedBars.jsp">StackedBars</a></li>
+	</ul>
 </body>
 </html>

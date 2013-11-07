@@ -16,6 +16,7 @@
 	<ul>	
 		<li><a href="Candlesticks/CandlesticksPlot.jsp">CandlesticksPlot</a> <br/></li>
 		<li><a href="Candlesticks/CandlesticksGrid.jsp">CandlesticksGrid</a> <br/></li>
+		<li><a href="Candlesticks/CandlesticksTheme.jsp">CandlesticksTheme</a> <br/></li>
 	</ul>
 	<h3>Columns</h3>
 	<ul>

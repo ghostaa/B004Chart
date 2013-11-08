@@ -53,10 +53,10 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ClusteredBars_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" vMajorLines="false" vMinorLines="true" y_titleFontColor="#408080" dojoType="dojox.charting.widget.Chart2D">
-                      <div class="axis" name="x" includeZero="false" min="2000" max="8000" rotation="1" title="somethingX" titleGap="0" titleOrientation="axis" minorLabels="true" minorTickStep="500" trailingSymbol="')'" maxLabelCharCount="2"></div>
+                      <div class="axis" name="x" includeZero="false" min="2000" max="8000" rotation="90" title="somethingX" titleGap="0" titleOrientation="axis" minorLabels="true" minorTickStep="500" trailingSymbol="')'" maxLabelCharCount="2"></div>
                       <div class="axis" name="y" includeZero="true" vertical="true" min="10" max="30" title="somethingY" titleGap="10" titleFontColor="#408080" minorLabels="true" minorTickStep="5" microTicks="true" microTickStep="1"></div>
                       <div class="plot" type="Grid" name="grid" vMajorLines="false" vMinorLines="true"></div>
-                        <div class="plot" name="dojox_charting_widget_plot" type="ClusteredBars" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot" type="ClusteredBars" labels="false" stroke="{'style':'Solid'}"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                       <div name="series01" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
@@ -69,7 +69,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ClusteredBars_dojox_charting_widget_Chart2D01" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot03" type="ClusteredBars" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot03" type="ClusteredBars" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot03"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot03" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                       <div name="series01" class="series" plot="dojox_charting_widget_plot03" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
@@ -83,7 +83,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ClusteredBars_dojox_charting_widget_Chart2D03" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot07" type="ClusteredBars" labels="false" fill="'#80FF00'"></div>
+                        <div class="plot" name="dojox_charting_widget_plot07" type="ClusteredBars" labels="false" fill="'#80FF00'" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot07" highlight="#FF8080"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot07" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                       <div name="series01" class="series" plot="dojox_charting_widget_plot07" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
@@ -111,7 +111,7 @@
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ClusteredBars_dojox_charting_widget_Chart2D02" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="y" includeZero="false" vertical="true" min="10" max="20"></div>
-                        <div class="plot" name="dojox_charting_widget_plot05" type="ClusteredBars" gap="5" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot05" type="ClusteredBars" gap="5" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot05"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot05" highlight="#000000"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot05" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
@@ -126,7 +126,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ClusteredBars_dojox_charting_widget_Chart2D04" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot09" type="ClusteredBars" gap="5" minBarSize="10" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot09" type="ClusteredBars" gap="5" minBarSize="10" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot09"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot09" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                       <div name="series01" class="series" plot="dojox_charting_widget_plot09" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
@@ -141,7 +141,7 @@
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ClusteredBars_dojox_charting_widget_Chart2D05" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="y" includeZero="false" vertical="true" min="10" max="20"></div>
-                        <div class="plot" name="dojox_charting_widget_plot11" type="ClusteredBars" maxBarSize="50" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot11" type="ClusteredBars" maxBarSize="50" labels="false" stroke="{'style':'Solid'}"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot11" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                       <div name="series01" class="series" plot="dojox_charting_widget_plot11" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
@@ -167,7 +167,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ClusteredBars_dojox_charting_widget_Chart2D06" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot13" type="ClusteredBars" labels="false" animate="true"></div>
+                        <div class="plot" name="dojox_charting_widget_plot13" type="ClusteredBars" labels="false" animate="true" stroke="{'style':'Solid','color':'#80FF00','width':2}"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot13"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot13" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                       <div name="series01" class="series" plot="dojox_charting_widget_plot13" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
@@ -181,9 +181,9 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ClusteredBars_dojox_charting_widget_Chart2D07" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot15" type="ClusteredBars" labels="false" shadow="{dx:2,dy:2,width:2}"></div>
+                        <div class="plot" name="dojox_charting_widget_plot15" type="ClusteredBars" labels="false" shadow="{dx:2,dy:2,width:2}" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot15" scale="20"></div>
-                      <div name="series" class="series" plot="dojox_charting_widget_plot15" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
+                      <div stroke="{'style':'ShortDash','color':'#FFFF80','width':1}" name="series" class="series" plot="dojox_charting_widget_plot15" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot15" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
@@ -195,7 +195,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ClusteredBars_dojox_charting_widget_Chart2D08" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot01" type="ClusteredBars" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot01" type="ClusteredBars" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot01" scale="5" shift="5"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
@@ -223,7 +223,7 @@
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ClusteredBars_dojox_charting_widget_Chart2D09" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="y" includeZero="false" vertical="true" min="10" max="20"></div>
-                        <div class="plot" name="dojox_charting_widget_plot02" type="ClusteredBars" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot02" type="ClusteredBars" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot02"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot02" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'tooltip':'amount','x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                       <div name="series01" class="series" plot="dojox_charting_widget_plot02" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
@@ -233,6 +233,17 @@
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="ClusteredBars_panel11" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="ClusteredBars_dojox_charting_widget_Chart2D10" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" name="dojox_charting_widget_plot04" type="ClusteredBars" labels="false" stroke="{'style':'Solid'}"></div>
+                      <div stroke="{'color':'#80FF80','width':1}" name="series" class="series" plot="dojox_charting_widget_plot04" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
+                      <div stroke="{'style':'ShortDash','color':'#FF0080','width':3}" name="series01" class="series" plot="dojox_charting_widget_plot04" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ClusteredBars_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
       </div>
@@ -242,6 +253,7 @@
         <bttdojo:label id="ClusteredBars_label09" text="mapping tooltips=null&amount"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="ClusteredBars_label10" text="stroke properties of two series"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
       </div>

@@ -45,31 +45,29 @@
 		dojo.require("dojox.charting.action2d.Shake");
 	</script>
 
-  <div id="CandlesticksGrid_bttStoreWidget" data-dojo-props="operationName:'StockOp',contextPath:'/TestChart'" data-dojo-type="com.ibm.btt.store.BTTOperationStore"></div>
-  <div role="presentation" id="CandlesticksGrid_panel" class="BTTTableStyle">
+  <div id="OHLCSeries_bttStoreWidget" data-dojo-props="operationName:'StockOp',contextPath:'/TestChart'" data-dojo-type="com.ibm.btt.store.BTTOperationStore"></div>
+  <div role="presentation" id="OHLCSeries_panel" class="BTTTableStyle">
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="CandlesticksGrid_panel01" class="BTTTableStyle">
+          <div role="presentation" id="OHLCSeries_panel01" class="BTTTableStyle">
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-                <div style="width:400px;height:300px;" id="CandlesticksGrid_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" hMajorLines="false" hMinorLines="true" y_titleFontColor="#FF8080" dojoType="dojox.charting.widget.Chart2D">
-                      <div class="axis" name="x" includeZero="true" rotation="90" title="somethingX" titleGap="0" minorLabels="true" minorTickStep="5" microTicks="true" microTickStep="1" maxLabelSize="5"></div>
-                      <div class="axis" name="y" includeZero="false" vertical="true" min="10" max="20" title="sonethingY" titleGap="5" titleFontColor="#FF8080" titleOrientation="away" trailingSymbol="'&'" maxLabelCharCount="1"></div>
-                      <div class="plot" type="Grid" name="grid" hMajorLines="false" hMinorLines="true"></div>
-                        <div class="plot" name="dojox_charting_widget_plot" type="Candlesticks" labels="false" stroke="{'style':'Solid'}"></div>
-                      <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('CandlesticksGrid_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','mid':'min','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
+                <div style="width:400px;height:300px;" id="OHLCSeries_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" name="dojox_charting_widget_plot" type="OHLC" labels="false" stroke="{'style':'Solid'}"></div>
+                      <div stroke="{'style':'ShortDot','color':'#FFFF00','width':2}" name="series" class="series" plot="dojox_charting_widget_plot" fill="'#FF0000'" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('OHLCSeries_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
                 </div>
               </div>
             </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="CandlesticksGrid_panel02" class="BTTTableStyle">
+          <div role="presentation" id="OHLCSeries_panel02" class="BTTTableStyle">
           </div>
       </div>
     </div>
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="OHLCSeries_label" text="strokecolor=yellow strokewidth=2 stroketype=shortDot fill=red"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
       </div>

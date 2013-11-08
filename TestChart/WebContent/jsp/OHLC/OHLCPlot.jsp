@@ -53,7 +53,8 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="OHLCPlot_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot" type="OHLC" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot" type="OHLC" labels="false" fill="'#FF0000'" animate="true" stroke="{'style':'Solid'}"></div>
+                        <div class="action" type="Magnify" plot="dojox_charting_widget_plot" scale="2"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('OHLCPlot_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
                 </div>
               </div>
@@ -62,10 +63,29 @@
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="OHLCPlot_panel02" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="OHLCPlot_dojox_charting_widget_Chart2D01" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" tension="x" name="dojox_charting_widget_plot01" type="OHLC" markers="true" labels="false" stroke="{'style':'Solid'}"></div>
+                        <div class="action" type="Tooltip" plot="dojox_charting_widget_plot01"></div>
+                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot01" highlight="#FF0000"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('OHLCPlot_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="OHLCPlot_panel03" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="OHLCPlot_dojox_charting_widget_Chart2D02" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" name="dojox_charting_widget_plot02" type="OHLC" labels="false" stroke="{'style':'Solid','color':'#FF0000','width':2}"></div>
+                        <div class="action" type="Shake" plot="dojox_charting_widget_plot02"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot02" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('OHLCPlot_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
@@ -75,11 +95,41 @@
     </div>
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="OHLCPlot_label" text="Magnify=true animate=true fill=red"/>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="OHLCPlot_label01" text="tooltips/highlight/showmarkers=true"/>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="OHLCPlot_label03" text="shake=true Strokecolor=red strokestyle=solid strikewidth=2"/>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+      </div>
+    </div>
+    <div class="BTTRowStyle" role="presentation">
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="OHLCPlot_panel05" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="OHLCPlot_dojox_charting_widget_Chart2D03" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" name="dojox_charting_widget_plot03" type="OHLC" gap="10" labels="false" shadow="{dx:2,dy:2,width:2,color:'#80FF00'}" stroke="{'style':'Solid'}"></div>
+                        <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot03" scale="1.5" shift="2"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot03" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('OHLCPlot_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="OHLCPlot_panel06" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="OHLCPlot_dojox_charting_widget_Chart2D04" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" name="dojox_charting_widget_plot04" type="OHLC" minBarSize="20" labels="false" stroke="{'style':'ShortDash','color':'#80FF00','width':1}"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot04" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('OHLCPlot_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
@@ -89,6 +139,18 @@
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="OHLCPlot_panel08" class="BTTTableStyle">
           </div>
+      </div>
+    </div>
+    <div class="BTTRowStyle" role="presentation">
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="OHLCPlot_label02" text="MoveSlice=true gap=10 shadow=true"/>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="OHLCPlot_label04" text="strokeStyle=shotDarsh minbarSize=20"/>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
       </div>
     </div>
     <div class="BTTRowStyle" role="presentation">

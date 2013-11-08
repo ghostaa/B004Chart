@@ -53,10 +53,10 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="MarkersGrid_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" vMajorLines="false" vMinorLines="true" titleFontColor="#80FF00" dojoType="dojox.charting.widget.Chart2D">
-                      <div class="axis" name="x" includeZero="true" rotation="1" title="somethingX" titleGap="0" titleFontColor="#80FF00" titleOrientation="away" minorLabels="true" minorTickStep="5" maxLabelSize="2"></div>
+                      <div class="axis" name="x" includeZero="true" rotation="90" title="somethingX" titleGap="0" titleFontColor="#80FF00" titleOrientation="away" minorLabels="true" minorTickStep="5" maxLabelSize="2"></div>
                       <div class="axis" name="y" includeZero="false" vertical="true" min="3000" max="8000" title="somethingY" titleOrientation="away" trailingSymbol="'%'" maxLabelCharCount="2"></div>
                       <div class="plot" type="Grid" name="grid" vMajorLines="false" vMinorLines="true"></div>
-                        <div class="plot" name="dojox_charting_widget_plot" type="Markers" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot" type="Markers" labels="false" stroke="{'style':'Solid'}"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('MarkersGrid_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>

@@ -53,10 +53,10 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ColumnsPlot_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                      <div class="axis" name="x" includeZero="false"></div>
+                      <div class="axis" name="x" includeZero="false" rotation="1"></div>
                       <div class="axis" name="y" includeZero="false" vertical="true"></div>
                       <div class="plot" type="Grid" name="grid"></div>
-                        <div class="plot" name="dojox_charting_widget_plot" type="Columns" gap="1" minBarSize="20" fill="'#FF8040'"></div>
+                        <div class="plot" name="dojox_charting_widget_plot" type="Columns" gap="1" minBarSize="20" labels="false" fill="'#FF8040'" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot" scale="1.5"></div>
@@ -72,7 +72,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ColumnsPlot_dojox_charting_widget_Chart2D01" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot01" type="Columns" gap="2" minBarSize="10" fill="'#008000'"></div>
+                        <div class="plot" name="dojox_charting_widget_plot01" type="Columns" gap="2" minBarSize="10" labels="false" fill="'#008000'" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot01"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot01"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot01" scale="1.5"></div>
@@ -88,7 +88,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ColumnsPlot_dojox_charting_widget_Chart2D07" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot07" type="Columns" maxBarSize="20"></div>
+                        <div class="plot" name="dojox_charting_widget_plot07" type="Columns" maxBarSize="20" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot07"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot07" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ColumnsPlot_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
@@ -101,7 +101,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ColumnsPlot_dojox_charting_widget_Chart2D02" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" tension="X" name="dojox_charting_widget_plot02" type="Columns" Shadow="true" shadow="{dx:2,dy:2,color:'#FF0000'}"></div>
+                        <div class="plot" tension="X" name="dojox_charting_widget_plot02" type="Columns" labels="false" shadow="{dx:2,dy:2,color:'#FF0000'}" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot02"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot02"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot02" scale="1.5"></div>
@@ -139,7 +139,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ColumnsPlot_dojox_charting_widget_Chart2D03" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot03" type="Columns"></div>
+                        <div class="plot" name="dojox_charting_widget_plot03" type="Columns" labels="false" stroke="{'style':'Solid','color':'#FF8080','width':1}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot03"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot03"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot03" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ColumnsPlot_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
@@ -153,7 +153,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ColumnsPlot_dojox_charting_widget_Chart2D04" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot04" type="Columns"></div>
+                        <div class="plot" name="dojox_charting_widget_plot04" type="Columns" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot04"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot04" scale="5"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot04" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ColumnsPlot_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
@@ -167,7 +167,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ColumnsPlot_dojox_charting_widget_Chart2D05" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot05" type="Columns"></div>
+                        <div class="plot" name="dojox_charting_widget_plot05" type="Columns" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot05"></div>
                         <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot05" scale="2" shift="2"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot05" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ColumnsPlot_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
@@ -181,7 +181,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="ColumnsPlot_dojox_charting_widget_Chart2D06" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot06" type="Columns" animate="true"></div>
+                        <div class="plot" name="dojox_charting_widget_plot06" type="Columns" labels="false" animate="true" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot06"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot06" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('ColumnsPlot_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
@@ -195,13 +195,13 @@
           <div role="presentation" id="ColumnsPlot_panel07" class="BTTTableStyle">
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-                <bttdojo:label id="ColumnsPlot_label03" text="shake=true"/>
+                <bttdojo:label id="ColumnsPlot_label03" text="shake=true strokecolor=org strokestyle=solid strokewidth=1"/>
               </div>
             </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-        <bttdojo:label id="ColumnsPlot_label04" text="agnify=true,scale=5"/>
+        <bttdojo:label id="ColumnsPlot_label04" text="magnify=true,scale=5"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
         <bttdojo:label id="ColumnsPlot_label05" text="moveslice=true,shift=2,scale=2"/>

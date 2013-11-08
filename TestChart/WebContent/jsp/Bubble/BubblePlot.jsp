@@ -54,9 +54,9 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="BubblePlot_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                      <div class="axis" name="x" includeZero="false"></div>
+                      <div class="axis" name="x" includeZero="false" rotation="1"></div>
                       <div class="axis" name="y" includeZero="false" vertical="true"></div>
-                        <div class="plot" name="dojox_charting_widget_plot" type="Bubble" markers="true" labels="false" precision="2"></div>
+                        <div class="plot" name="dojox_charting_widget_plot" type="Bubble" markers="true" labels="false" precision="2" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot"></div>
@@ -71,7 +71,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="BubblePlot_dojox_charting_widget_Chart2D03" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" tension="X" name="dojox_charting_widget_plot03" type="Bubble" markers="true" labels="false" fill="'#FF8000'"></div>
+                        <div class="plot" tension="X" name="dojox_charting_widget_plot03" type="Bubble" markers="true" labels="false" fill="'#FF8000'" stroke="{'style':'Solid'}"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot03" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('BubblePlot_bttStoreWidget'),mappingOptions:{'value':{'size':'size','x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
@@ -83,7 +83,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="BubblePlot_dojox_charting_widget_Chart2D04" theme="dojox.charting.themes.MiamiNice" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot04" type="Bubble" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot04" type="Bubble" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot04" highlight="#00FF00"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot04"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot04" scale="1.5"></div>
@@ -130,10 +130,10 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="BubblePlot_dojox_charting_widget_Chart2D01" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                      <div class="axis" name="x" includeZero="false" title="x=empty(index)"></div>
+                      <div class="axis" name="x" includeZero="false" rotation="1" title="x=empty(index)"></div>
                       <div class="axis" name="y" includeZero="false" vertical="true"></div>
                       <div class="plot" type="Grid" name="grid"></div>
-                        <div class="plot" name="dojox_charting_widget_plot01" type="Bubble" markers="true" labels="false" animate="true"></div>
+                        <div class="plot" name="dojox_charting_widget_plot01" type="Bubble" markers="true" labels="false" animate="true" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot01"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot01"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot01"></div>
@@ -150,10 +150,10 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="BubblePlot_dojox_charting_widget_Chart2D02" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                      <div class="axis" name="x" includeZero="false"></div>
+                      <div class="axis" name="x" includeZero="false" rotation="1"></div>
                       <div class="axis" name="y" includeZero="false" vertical="true" title="x=reversal odd and even "></div>
                       <div class="plot" type="Grid" name="grid"></div>
-                        <div class="plot" name="dojox_charting_widget_plot02" type="Bubble" markers="true" labels="false" shadow="{dx:5,dy:5,width:5,color:'#FF0000'}"></div>
+                        <div class="plot" name="dojox_charting_widget_plot02" type="Bubble" markers="true" labels="false" shadow="{dx:5,dy:5,width:5,color:'#FF0000'}" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot02"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot02"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot02"></div>
@@ -167,6 +167,14 @@
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
           <div role="presentation" id="BubblePlot_panel07" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="BubblePlot_dojox_charting_widget_Chart2D05" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" name="dojox_charting_widget_plot05" type="Bubble" labels="false" stroke="{'style':'Solid','color':'#FF0000','width':2}"></div>
+                      <div name="series" class="series" plot="dojox_charting_widget_plot05" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('BubblePlot_bttStoreWidget01'),mappingOptions:{'value':{'size':'size','x':'weight','y':'profit'}},rootPath:'AnnualStatementList'})})"></div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">

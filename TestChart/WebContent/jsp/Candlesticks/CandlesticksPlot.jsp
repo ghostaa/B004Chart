@@ -53,7 +53,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="CandlesticksPlot_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot" type="Candlesticks" markers="true" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot" type="Candlesticks" markers="true" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot" scale="1.5"></div>
@@ -68,7 +68,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="CandlesticksPlot_dojox_charting_widget_Chart2D01" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot01" type="Candlesticks" labels="false" shadow="{dx:2,dy:2,width:2}" fill="'#FF8080'" animate="true"></div>
+                        <div class="plot" name="dojox_charting_widget_plot01" type="Candlesticks" labels="false" shadow="{dx:2,dy:2,width:2}" fill="'#FF8080'" animate="true" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot01"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('CandlesticksPlot_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','mid':'min','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
                 </div>
@@ -81,7 +81,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="CandlesticksPlot_dojox_charting_widget_Chart2D02" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot02" type="Candlesticks" markers="true" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot02" type="Candlesticks" markers="true" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot02"></div>
                         <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot02" scale="1.5"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot02" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('CandlesticksPlot_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','mid':'min','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
@@ -109,7 +109,7 @@
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="CandlesticksPlot_dojox_charting_widget_Chart2D03" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="x" includeZero="false" rotation="1"></div>
-                        <div class="plot" name="dojox_charting_widget_plot03" type="Candlesticks" gap="15" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot03" type="Candlesticks" gap="15" labels="false" stroke="{'style':'Solid','color':'#80FF00','width':2}"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot03" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('CandlesticksPlot_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','mid':'min','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
                 </div>
               </div>
@@ -122,7 +122,7 @@
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="CandlesticksPlot_dojox_charting_widget_Chart2D04" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="x" includeZero="false" rotation="1"></div>
-                        <div class="plot" name="dojox_charting_widget_plot04" type="Candlesticks" minBarSize="15" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot04" type="Candlesticks" minBarSize="15" labels="false" stroke="{'style':'ShortDash','color':'#FF00FF','width':1}"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot04" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('CandlesticksPlot_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','mid':'min','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
                 </div>
               </div>
@@ -135,7 +135,7 @@
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="CandlesticksPlot_dojox_charting_widget_Chart2D05" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="x" includeZero="false" rotation="1"></div>
-                        <div class="plot" name="dojox_charting_widget_plot05" type="Candlesticks" maxBarSize="50" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot05" type="Candlesticks" maxBarSize="50" labels="false" stroke="{'style':'Solid'}"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot05" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('CandlesticksPlot_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','mid':'min','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
                 </div>
               </div>
@@ -145,10 +145,10 @@
     </div>
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-        <bttdojo:label id="CandlesticksPlot_label03" text="gap=5 minBarSize=15"/>
+        <bttdojo:label id="CandlesticksPlot_label03" text="gap=5 minBarSize=15 strokestyle=solid strokewidth=2"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-        <bttdojo:label id="CandlesticksPlot_label04" text="gap=0 minBarSize=15"/>
+        <bttdojo:label id="CandlesticksPlot_label04" text="gap=0 minBarSize=15 strokestyle=shotdash"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
         <bttdojo:label id="CandlesticksPlot_label05" text="gap=0 maxBarSize=50"/>

@@ -53,7 +53,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="PiePlot_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot" type="Pie" labels="false" radius="150"></div>
+                        <div class="plot" name="dojox_charting_widget_plot" type="Pie" labels="false" radius="150" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot" shift="5"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('PiePlot_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
@@ -66,7 +66,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="PiePlot_dojox_charting_widget_Chart2D01" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot01" type="Pie" labelOffset="-20" radius="150"></div>
+                        <div class="plot" name="dojox_charting_widget_plot01" type="Pie" labels="false" labelOffset="-20" radius="150" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot01" scale="5"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('PiePlot_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
@@ -79,9 +79,9 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="PiePlot_dojox_charting_widget_Chart2D02" theme="dojox.charting.themes.MiamiNice" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot02" type="Pie" markers="true" radius="150" animate="true"></div>
+                        <div class="plot" name="dojox_charting_widget_plot02" type="Pie" markers="true" labels="false" radius="150" animate="true" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot02"></div>
-                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot02" HighlightColor="#FF0080"></div>
+                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot02" highlight="#FF0080"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot02"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot02"></div>
                         <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot02"></div>
@@ -96,9 +96,9 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="PiePlot_dojox_charting_widget_Chart2D03" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" tension="X" name="dojox_charting_widget_plot03" type="Pie" fill="'#FF0080'" radius="150"></div>
+                        <div class="plot" tension="X" name="dojox_charting_widget_plot03" type="Pie" labels="false" fill="'#FF0080'" radius="150" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot03"></div>
-                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot03" HighlightColor="#00FF00"></div>
+                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot03" highlight="#00FF00"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot03" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('PiePlot_bttStoreWidget'),mappingOptions:{'value':{'size':'size','tooltip':'label','x':'!INDEX','y':'amount','legend':'label'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
@@ -163,7 +163,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="PiePlot_dojox_charting_widget_Chart2D04" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot04" type="Pie" markers="true" labelStyle="columns" radius="150"></div>
+                        <div class="plot" name="dojox_charting_widget_plot04" type="Pie" markers="true" labels="false" labelStyle="columns" radius="150" stroke="{'style':'Solid','color':'#FF0000','width':2}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot04"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot04"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot04"></div>
@@ -209,7 +209,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="PiePlot_dojox_charting_widget_Chart2D05" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot05" type="Pie" markers="true" labelStyle="rows" radius="150"></div>
+                        <div class="plot" name="dojox_charting_widget_plot05" type="Pie" markers="true" labels="false" labelStyle="rows" radius="150" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot05"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot05"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot05"></div>
@@ -233,7 +233,7 @@
           <div role="presentation" id="PiePlot_panel18" class="BTTTableStyle">
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-                <bttdojo:label id="PiePlot_label06" text="labelStyle=auto,銆�scale=5"/>
+                <bttdojo:label id="PiePlot_label06" text="labelStyle=auto,銆�scale=5"/>
               </div>
             </div>
           </div>
@@ -243,7 +243,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="PiePlot_dojox_charting_widget_Chart2D06" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot06" type="Pie" markers="true" labelStyle="auto" radius="150"></div>
+                        <div class="plot" name="dojox_charting_widget_plot06" type="Pie" markers="true" labels="false" labelStyle="auto" radius="150" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot06"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot06"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot06" scale="5"></div>
@@ -266,7 +266,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="PiePlot_dojox_charting_widget_Chart2D07" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot07" type="Pie" precision="2" radius="150"></div>
+                        <div class="plot" name="dojox_charting_widget_plot07" type="Pie" labels="false" precision="2" radius="150" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot07" scale="5"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot07" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('PiePlot_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount','legend':'label'}},rootPath:'listFL'})})"></div>
                 </div>

@@ -53,17 +53,17 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="LinesSeries_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot" type="Lines" markers="true" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot" type="Lines" markers="true" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot"></div>
-                      <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('LinesSeries_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
-                        <div class="plot" name="dojox_charting_widget_plot01" type="Lines" markers="true" labels="false"></div>
+                      <div stroke="{'color':'#80FF80','width':3}" name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('LinesSeries_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
+                        <div class="plot" name="dojox_charting_widget_plot01" type="Lines" markers="true" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot01"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot01"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot01"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot01" scale="1.5"></div>
                         <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot01" scale="1.5" shift="0"></div>
-                      <div name="series01" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('LinesSeries_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
+                      <div stroke="{'color':'#FF0080','width':3}" name="series01" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('LinesSeries_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>
             </div>
@@ -80,16 +80,11 @@
     </div>
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="LinesSeries_panel04" class="BTTTableStyle">
-          </div>
+        <bttdojo:label id="LinesSeries_label" text="stroke properties in two series"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="LinesSeries_panel05" class="BTTTableStyle">
-          </div>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
-          <div role="presentation" id="LinesSeries_panel06" class="BTTTableStyle">
-          </div>
       </div>
     </div>
     <div class="BTTRowStyle" role="presentation">

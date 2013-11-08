@@ -53,9 +53,9 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="OHLCGrid_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" hMajorLines="false" hMinorLines="true" titleFontColor="#FF0000" y_titleFontColor="#FF0080" dojoType="dojox.charting.widget.Chart2D">
-                      <div class="axis" name="x" includeZero="true" rotation="1" title="somethingX" titleGap="0" titleFontColor="#FF0000" titleOrientation="away"></div>
+                      <div class="axis" name="x" includeZero="true" rotation="90" title="somethingX" titleGap="0" titleFontColor="#FF0000" titleOrientation="away"></div>
                       <div class="axis" name="y" includeZero="false" vertical="true" title="sonethingY" titleGap="0" titleFontColor="#FF0080" titleOrientation="away" minorLabels="true" microTicks="true" trailingSymbol="'$'" maxLabelCharCount="3"></div>
-                        <div class="plot" name="dojox_charting_widget_plot" type="OHLC" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot" type="OHLC" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('OHLCGrid_bttStoreWidget'),mappingOptions:{'value':{'high':'high','low':'low','close':'close','open':'open'}},rootPath:'StockList'})})"></div>
                 </div>

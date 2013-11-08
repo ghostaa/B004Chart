@@ -53,12 +53,12 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:500px;height:500px;" id="Pie_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                      <div class="axis" name="x" includeZero="false"></div>
+                      <div class="axis" name="x" includeZero="false" rotation="90"></div>
                       <div class="axis" name="y" includeZero="false" vertical="true"></div>
                       <div class="plot" type="Grid" name="grid"></div>
-                        <div class="plot" name="dojox_charting_widget_plot" type="Pie" markers="true" labelOffset="-20" fill="'#FF0080'" radius="200"></div>
+                        <div class="plot" name="dojox_charting_widget_plot" type="Pie" markers="true" labels="false" labelOffset="-20" fill="'#FF0080'" radius="200" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot"></div>
-                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot" HighlightColor="#8000FF"></div>
+                        <div class="action" type="Highlight" plot="dojox_charting_widget_plot" highlight="#8000FF"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('Pie_bttStoreWidget'),mappingOptions:{'value':{'x':'!INDEX','y':'amount'}},rootPath:'listFL'})})"></div>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="GB18030"?>
 <XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="110,128,2028,1012" isRuleDirty="false">
   <styles/>
   <container name="Panel" id="panel">
@@ -13,7 +13,7 @@
         <gridData verticalAlignment="1" heightType="AutoSize" widthType="AutoSize" relativeWidth="-1" relativeHeight="-1" inlineStyle="{}" horizontalIndentType="FixedSize"/>
         <widget name="PlaceHolder">
           <gridData heightType="AutoSize" widthType="AutoSize" relativeWidth="-1" relativeHeight="-1" inlineStyle="{}" horizontalIndentType="FixedSize"/>
-          <container name="dojox_charting_widget_Chart2D" y__maxLabelCharCount="0" fixUpper="none" maxLabelSize="0" microTicks="false" y__fixUpper="none" minorLabels="false" y__enable__axis="false" y__maxLabelSize="0" majorLabels="true" y__microTicks="false" id="dojox_charting_widget_Chart2D03" y__includeZero="false" enableCache="false" minorTicks="true" y__minorTicks="true" maxLabelCharCount="0" theme="dojox.charting.themes.Claro" y__minorLabels="false" hMajorLines="true" y__majorLabels="true" hMinorLines="false" title="vMajorLines=false,vMinorLines=false" vMajorLines="false" titleFontColor="RGB {0, 128, 255}" enable__axis="true" vMinorLines="false" y__titleFontColor="RGB{0, 0, 0}" Grid="true" fixLower="none" includeZero="false" y__fixLower="none" y__enableCache="false" templateId="chart2d">
+          <container name="dojox_charting_widget_Chart2D" y__maxLabelCharCount="0" fixUpper="none" maxLabelSize="0" microTicks="false" y__fixUpper="none" minorLabels="false" y__enable__axis="false" y__maxLabelSize="0" majorLabels="true" y__microTicks="false" id="dojox_charting_widget_Chart2D03" y__includeZero="false" enableCache="false" minorTicks="true" y__minorTicks="true" maxLabelCharCount="0" theme="dojox.charting.themes.Claro" y__minorLabels="false" hMajorLines="true" y__majorLabels="true" hMinorLines="false" title="vMajorLines=false,vMinorLines=false" vMajorLines="false" titleFontColor="RGB {0, 128, 255}" enable__axis="true" vMinorLines="false" y__titleFontColor="RGB{0, 0, 0}" Grid="true" fixLower="none" includeZero="false" y__fixLower="none" y__enableCache="false" rotation="90" templateId="chart2d">
             <extendWidgetInfo/>
             <gridData heightHint="300" verticalAlignment="1" widthHint="400" heightType="FixedSize" widthType="FixedSize" relativeWidth="-1" relativeHeight="-1" inlineStyle="{}" horizontalIndentType="FixedSize"/>
             <container name="dojox_charting_widget_plot" y__maxLabelCharCount="0" maxLabelSize="0" microTicks="false" minorLabels="false" y__enable__axis="false" y__maxLabelSize="0" majorLabels="true" id="dojox_charting_widget_plot03" MoveSlice="true" type="Columns" y__minorTicks="true" MagnifyScale="1.5" maxLabelCharCount="0" hMajorLines="true" y__minorLabels="false" y__majorLabels="true" Markers="true" vMinorLines="false" y__titleFontColor="RGB{0, 0, 0}" Grid="false" includeZero="false" precision="1" Magnify="true" MoveSlice__Scale="1.5" fixUpper="none" y__fixUpper="none" Highlight="true" y__microTicks="false" y__includeZero="false" enableCache="false" minorTicks="true" MoveSlice__Shift="0" theme="dojox.charting.themes.Claro" hMinorLines="false" vMajorLines="true" titleFontColor="RGB{0, 0, 0}" enable__axis="false" Tooltip="true" Shake="true" fixLower="none" y__fixLower="none" y__enableCache="false" templateId="Plot">
@@ -322,4 +322,5 @@
   <rules/>
   <groups/>
   <vrules/>
+  <useECALoader>false</useECALoader>
 </XUI>

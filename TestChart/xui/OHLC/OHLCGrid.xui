@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="GB18030"?>
 <XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="193,176,420,320" isRuleDirty="false">
   <styles/>
   <container name="Panel" id="panel">
@@ -9,18 +9,22 @@
         <gridData verticalAlignment="1" heightType="AutoSize" widthType="AutoSize" relativeWidth="-1" relativeHeight="-1" inlineStyle="{}" horizontalIndentType="FixedSize"/>
         <widget name="PlaceHolder">
           <gridData heightType="AutoSize" widthType="AutoSize" relativeWidth="-1" relativeHeight="-1" inlineStyle="{}" horizontalIndentType="FixedSize"/>
-          <container name="dojox_charting_widget_Chart2D" y__maxLabelCharCount="3" maxLabelSize="0" microTicks="false" y__title="sonethingY" minorLabels="false" y__enable__axis="true" y__maxLabelSize="0" majorLabels="true" id="dojox_charting_widget_Chart2D" y__minorTicks="true" maxLabelCharCount="0" y__minorLabels="true" hMajorLines="false" y__majorLabels="true" titleOrientation="away" title="somethingX" y__trailingSymbol="$" y__titleOrientation="away" titleGap="0" y__titleFontColor="RGB {255, 0, 128}" y__titleGap="0" includeZero="true" rotation="1" fixUpper="none" y__fixUpper="none" y__microTicks="true" y__includeZero="false" enableCache="false" minorTicks="true" theme="dojox.charting.themes.Claro" hMinorLines="true" titleFontColor="RGB {255, 0, 0}" enable__axis="true" fixLower="none" y__fixLower="none" y__enableCache="false" templateId="chart2d">
+          <container name="dojox_charting_widget_Chart2D" y__maxLabelCharCount="3" maxLabelSize="0" microTicks="false" y__title="sonethingY" minorLabels="false" y__enable__axis="true" y__maxLabelSize="0" majorLabels="true" id="dojox_charting_widget_Chart2D" y__minorTicks="true" maxLabelCharCount="0" y__minorLabels="true" hMajorLines="false" y__majorLabels="true" titleOrientation="away" title="somethingX" y__trailingSymbol="$" y__titleOrientation="away" titleGap="0" y__titleFontColor="RGB {255, 0, 128}" y__titleGap="0" includeZero="true" rotation="90" fixUpper="none" y__fixUpper="none" y__microTicks="true" y__includeZero="false" enableCache="false" minorTicks="true" theme="dojox.charting.themes.Claro" hMinorLines="true" titleFontColor="RGB {255, 0, 0}" enable__axis="true" fixLower="none" y__fixLower="none" y__enableCache="false" templateId="chart2d">
             <extendWidgetInfo/>
             <gridData heightHint="300" verticalAlignment="1" widthHint="400" heightType="FixedSize" widthType="FixedSize" relativeWidth="-1" relativeHeight="-1" inlineStyle="{}" horizontalIndentType="FixedSize"/>
             <container name="dojox_charting_widget_plot" y__maxLabelCharCount="0" maxLabelSize="0" microTicks="false" minorLabels="false" y__enable__axis="false" y__maxLabelSize="0" majorLabels="true" id="dojox_charting_widget_plot" type="OHLC" y__minorTicks="true" maxLabelCharCount="0" y__minorLabels="false" hMajorLines="true" y__majorLabels="true" vMinorLines="false" y__titleFontColor="RGB{0, 0, 0}" Grid="false" includeZero="false" precision="1" rotation="1" fixUpper="none" y__fixUpper="none" y__microTicks="false" y__includeZero="false" enableCache="false" minorTicks="true" theme="dojox.charting.themes.Claro" hMinorLines="false" vMajorLines="true" titleFontColor="RGB{0, 0, 0}" enable__axis="false" fixLower="none" y__fixLower="none" y__enableCache="false" templateId="Plot">
               <extendWidgetInfo parentExtendNodeId="contentArea" extendNodeColNum="1"/>
               <gridData heightHint="300" verticalAlignment="1" widthHint="400" heightType="AutoSize" widthType="AutoSize" relativeWidth="0" relativeHeight="0" inlineStyle="{}" horizontalIndentType="FixedSize"/>
-              <container name="_Container" id="panel">
-                <extendWidgetInfo generateOption="$Tooltip=true"/>
-                <gridData verticalAlignment="1" heightType="AutoSize" widthType="AutoSize" relativeWidth="100" relativeHeight="100" inlineStyle="{}" horizontalIndentType="FixedSize"/>
-                <gridLayout numColumns="0" maxCol="0" maxRow="0"/>
-                <hiddenWidget name="dojox_charting_widget_inner" className="action" type="Tooltip" id="tooltip"/>
-              </container>
+              <widget name="PlaceHolder">
+                <gridData verticalAlignment="1" heightType="AutoSize" widthType="AutoSize" relativeWidth="-1" relativeHeight="-1" inlineStyle="{}" horizontalIndentType="FixedSize"/>
+                <container name="_Container" id="panel">
+                  <extendWidgetInfo generateOption="$Tooltip=true"/>
+                  <gridData verticalAlignment="1" heightType="AutoSize" widthType="AutoSize" relativeWidth="100" relativeHeight="100" inlineStyle="{}" horizontalIndentType="FixedSize"/>
+                  <gridLayout numColumns="0" maxCol="0" maxRow="0"/>
+                  <hiddenWidget name="dojox_charting_widget_inner" className="action" type="Tooltip" id="tooltip"/>
+                </container>
+                <gridLayout numColumns="0"/>
+              </widget>
               <gridLayout numColumns="1" maxCol="1" maxRow="1" minCol="1" minRow="2"/>
               <hiddenWidget name="dojox_charting_widget_series" Shadow="false" Magnify="false" Animate="false" minBarSize="0" ShadowColor="RGB{0, 0, 0}" htmlLabels="true" radius="0" Highlight="false" gap="0" Markers="false" id="dojox_charting_widget_series" labelStyle="default" MoveSlice="false" store="{&quot;baseType&quot;:&quot;BTT_DOJO_STORE&quot;,&quot;id&quot;:&quot;bttStoreWidget&quot;}" seriesName="series" Tooltip="false" Shake="false" labelOffset="0" rootPath="StockList" mappingOptions="{&quot;value&quot;:{&quot;size&quot;:&quot;&quot;,&quot;high&quot;:&quot;high&quot;,&quot;tooltip&quot;:&quot;&quot;,&quot;low&quot;:&quot;low&quot;,&quot;x&quot;:&quot;&quot;,&quot;close&quot;:&quot;close&quot;,&quot;mid&quot;:&quot;&quot;,&quot;y&quot;:&quot;&quot;,&quot;open&quot;:&quot;open&quot;,&quot;legend&quot;:&quot;&quot;},&quot;__btt_value&quot;:&quot;&quot;,&quot;__btt_type&quot;:&quot;Stock&quot;}" maxBarSize="-1" type="Default" axisType="plot" precision="1" labels="false"/>
             </container>

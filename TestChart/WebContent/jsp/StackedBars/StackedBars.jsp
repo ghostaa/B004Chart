@@ -53,10 +53,10 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="StackedBars_dojox_charting_widget_Chart2D" theme="dojox.charting.themes.Claro" vMajorLines="false" vMinorLines="true" y_titleFontColor="#FF8080" dojoType="dojox.charting.widget.Chart2D">
-                      <div class="axis" name="x" includeZero="false" rotation="1" title="somethingX" titleGap="0" titleOrientation="away" minorLabels="true" minorTickStep="500" microTicks="true" microTickStep="100" trailingSymbol="'>'" maxLabelCharCount="2"></div>
+                      <div class="axis" name="x" includeZero="false" rotation="90" title="somethingX" titleGap="0" titleOrientation="away" minorLabels="true" minorTickStep="500" microTicks="true" microTickStep="100" trailingSymbol="'>'" maxLabelCharCount="2"></div>
                       <div class="axis" name="y" includeZero="true" vertical="true" max="10" title="somethingY" titleGap="10" titleFontColor="#FF8080" titleOrientation="axis"></div>
                       <div class="plot" type="Grid" name="grid" vMajorLines="false" vMinorLines="true"></div>
-                        <div class="plot" name="dojox_charting_widget_plot" type="StackedBars" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot" type="StackedBars" labels="false" stroke="{'style':'Solid'}"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
                 </div>
@@ -74,7 +74,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="StackedBars_dojox_charting_widget_Chart2D01" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot01" type="StackedBars" labels="false" fill="'#FFFF00'"></div>
+                        <div class="plot" name="dojox_charting_widget_plot01" type="StackedBars" labels="false" fill="'#FFFF00'" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot01" highlight="#000000"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot01" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
@@ -93,7 +93,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="StackedBars_dojox_charting_widget_Chart2D05" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot05" type="StackedBars" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot05" type="StackedBars" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot05" highlight="#80FF00"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot05" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot05" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
@@ -111,7 +111,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="StackedBars_dojox_charting_widget_Chart2D04" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot02" type="StackedBars" gap="5" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot02" type="StackedBars" gap="5" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Highlight" plot="dojox_charting_widget_plot02"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot02" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot02" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
@@ -126,7 +126,7 @@
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="StackedBars_dojox_charting_widget_Chart2D03" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="y" includeZero="false" vertical="true" min="10" max="20"></div>
-                        <div class="plot" name="dojox_charting_widget_plot03" type="StackedBars" gap="5" minBarSize="10" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot03" type="StackedBars" gap="5" minBarSize="10" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Tooltip" plot="dojox_charting_widget_plot03"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot03" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot03" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
@@ -141,7 +141,7 @@
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="StackedBars_dojox_charting_widget_Chart2D02" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="y" includeZero="false" vertical="true" min="10" max="20"></div>
-                        <div class="plot" name="dojox_charting_widget_plot04" type="StackedBars" maxBarSize="50" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot04" type="StackedBars" maxBarSize="50" labels="false" stroke="{'style':'Solid'}"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot04" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot04" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
                 </div>
@@ -172,7 +172,7 @@
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="StackedBars_dojox_charting_widget_Chart2D08" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="y" includeZero="false" vertical="true" min="10" max="20"></div>
-                        <div class="plot" name="dojox_charting_widget_plot06" type="StackedBars" labels="false" shadow="{dx:2,dy:2,width:2}" animate="true"></div>
+                        <div class="plot" name="dojox_charting_widget_plot06" type="StackedBars" labels="false" shadow="{dx:2,dy:2,width:2}" animate="true" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Shake" plot="dojox_charting_widget_plot06"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot06" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot06" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
@@ -187,7 +187,7 @@
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="StackedBars_dojox_charting_widget_Chart2D07" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
                       <div class="axis" name="y" includeZero="false" vertical="true" min="10" max="20"></div>
-                        <div class="plot" name="dojox_charting_widget_plot07" type="StackedBars" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot07" type="StackedBars" labels="false" stroke="{'style':'Solid'}"></div>
                         <div class="action" type="Magnify" plot="dojox_charting_widget_plot07" scale="10"></div>
                         <div class="action" type="MoveSlice" plot="dojox_charting_widget_plot07" scale="5" shift="5"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot07" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
@@ -202,7 +202,7 @@
             <div class="BTTRowStyle" role="presentation">
               <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
                 <div style="width:400px;height:300px;" id="StackedBars_dojox_charting_widget_Chart2D06" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
-                        <div class="plot" name="dojox_charting_widget_plot08" type="StackedBars" labels="false"></div>
+                        <div class="plot" name="dojox_charting_widget_plot08" type="StackedBars" labels="false" stroke="{'style':'Solid'}"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot08" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
                       <div name="series" class="series" plot="dojox_charting_widget_plot08" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
                 </div>
@@ -227,6 +227,28 @@
     </div>
     <div class="BTTRowStyle" role="presentation">
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+          <div role="presentation" id="StackedBars_panel10" class="BTTTableStyle">
+            <div class="BTTRowStyle" role="presentation">
+              <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+                <div style="width:400px;height:300px;" id="StackedBars_dojox_charting_widget_Chart2D09" theme="dojox.charting.themes.Claro" dojoType="dojox.charting.widget.Chart2D">
+                        <div class="plot" name="dojox_charting_widget_plot09" type="StackedBars" labels="false" stroke="{'style':'Solid'}"></div>
+                      <div stroke="{'style':'Dash','color':'#0000FF','width':2}" name="series" class="series" plot="dojox_charting_widget_plot09" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
+                      <div stroke="{'color':'#FF0000','width':2}" name="series01" class="series" plot="dojox_charting_widget_plot09" store="new dojo.data.ObjectStore({objectStore:new com.ibm.btt.store.mapping.BTTMapping({store:dijit.byId('StackedBars_bttStoreWidget'),mappingOptions:{'value':'amount'},rootPath:'listFL'})})"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+      </div>
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+      </div>
+    </div>
+    <div class="BTTRowStyle" role="presentation">
+      <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
+        <bttdojo:label id="StackedBars_label07" text="stroke properties in two series"/>
       </div>
       <div class="BTTCellStyle" role="presentation" align="left" style="vertical-align:middle;">
       </div>

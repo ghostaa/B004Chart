@@ -51,6 +51,8 @@
 	<ul>	
 		<li><a href="OHLC/OHLCPlot.jsp">OHLCPlot</a> <br/></li>
 		<li><a href="OHLC/OHLCGrid.jsp">OHLCGrid</a> <br/></li>
+		<li><a href="OHLC/OHLCSeries.jsp">OHLCSeries</a> <br/></li>
+		<li><a href="OHLC/OHLCStroke.jsp">OHLCStroke</a> <br/></li>
 	</ul>
 	<h3>StackedLines</h3>
 	<ul>	

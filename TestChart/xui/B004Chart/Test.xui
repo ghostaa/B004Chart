@@ -24,4 +24,6 @@
   <rules/>
   <groups/>
   <vrules/>
+  <useECALoader>false</useECALoader>
+  <versionNo>0</versionNo>
 </XUI>

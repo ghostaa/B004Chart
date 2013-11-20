@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="GB18030"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <XUI xmlns="http://btt.cn.ibm.com/xui/2.0" bounds="147,55,584,386" isRuleDirty="false">
   <styles/>
   <container name="Panel" id="panel">
@@ -16,7 +16,7 @@
               <extendWidgetInfo parentExtendNodeId="contentArea" extendNodeColNum="1"/>
               <gridData heightHint="300" verticalAlignment="1" widthHint="400" heightType="AutoSize" widthType="AutoSize" relativeWidth="0" relativeHeight="0" inlineStyle="{}" horizontalIndentType="FixedSize"/>
               <gridLayout numColumns="1" maxCol="1" maxRow="1" minCol="1" minRow="2"/>
-              <hiddenWidget name="dojox_charting_widget_series" Shadow="false" Magnify="false" Animate="false" minBarSize="0" ShadowColor="RGB{0, 0, 0}" htmlLabels="true" radius="0" Highlight="false" gap="0" Markers="false" id="dojox_charting_widget_series" labelStyle="default" MoveSlice="false" store="{&quot;baseType&quot;:&quot;BTT_DOJO_STORE&quot;,&quot;id&quot;:&quot;bttStoreWidget&quot;}" seriesName="series" Tooltip="false" Shake="false" labelOffset="0" rootPath="listFL" mappingOptions="{&quot;value&quot;:{&quot;size&quot;:&quot;&quot;,&quot;tooltip&quot;:&quot;&quot;,&quot;x&quot;:&quot;&quot;,&quot;y&quot;:&quot;amount&quot;,&quot;legend&quot;:&quot;&quot;},&quot;__btt_value&quot;:&quot;&quot;,&quot;__btt_type&quot;:&quot;Complex&quot;}" maxBarSize="-1" type="Default" axisType="plot" precision="1" labels="false"/>
+              <hiddenWidget name="dojox_charting_widget_series" Shadow="false" Magnify="false" Animate="false" minBarSize="0" ShadowColor="RGB{0, 0, 0}" htmlLabels="true" radius="0" Highlight="false" gap="0" Markers="false" id="dojox_charting_widget_series" labelStyle="default" MoveSlice="false" store="{&quot;baseType&quot;:&quot;BTT_DOJO_STORE&quot;,&quot;id&quot;:&quot;bttStoreWidget&quot;}" seriesName="series" Tooltip="false" Shake="false" labelOffset="0" rootPath="listFL" mappingOptions="{&quot;value&quot;:{&quot;size&quot;:&quot;&quot;,&quot;tooltip&quot;:&quot;&quot;,&quot;x&quot;:&quot;&quot;,&quot;y&quot;:&quot;@amount&quot;,&quot;legend&quot;:&quot;&quot;},&quot;__btt_value&quot;:&quot;&quot;,&quot;__btt_type&quot;:&quot;Complex&quot;}" maxBarSize="-1" type="Default" axisType="plot" precision="1" labels="false"/>
             </container>
             <gridLayout numColumns="1" maxCol="0" maxRow="0"/>
           </container>
@@ -85,4 +85,5 @@
   <groups/>
   <vrules/>
   <useECALoader>true</useECALoader>
+  <versionNo>0</versionNo>
 </XUI>

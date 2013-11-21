@@ -47,6 +47,7 @@ public class StockOp extends BTTServerOperation {
 								l_item.setValueAt("close",  new Float(l_json_item.get("close").toString()));
 								l_item.setValueAt("high",  new Float(l_json_item.get("high").toString()));
 								l_item.setValueAt("low",  new Float(l_json_item.get("low").toString()));
+								l_item.setValueAt("mid",  (new Float(l_json_item.get("low").toString())+new Float(l_json_item.get("high").toString()))/2);
 								
 								l_instance.addElement(l_item);
 							}

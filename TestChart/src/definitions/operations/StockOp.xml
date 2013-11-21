@@ -14,7 +14,7 @@
 				<data id="close" refType="Float"/>
 				<data id="high" refType="Float"/>
 				<data id="low" refType="Float"/>
-				<data id="min" refType="Float"/>
+				<data id="mid" refType="Float"/>
 			</kColl>
 		</iColl>
 	</kColl>

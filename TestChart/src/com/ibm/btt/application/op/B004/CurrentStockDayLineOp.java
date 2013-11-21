@@ -53,6 +53,7 @@ public class CurrentStockDayLineOp extends BTTServerOperation {
 				currentStockDayLine.setValueAt("high", currentStockDayLineMap.get("high"));
 				currentStockDayLine.setValueAt("low", currentStockDayLineMap.get("low"));
 				currentStockDayLine.setValueAt("close", currentStockDayLineMap.get("close"));
+				currentStockDayLine.setValueAt("mid", (new Float(currentStockDayLineMap.get("high"))+new Float(currentStockDayLineMap.get("low")))/2+"");
 				currentStockDayLineList.addElement(currentStockDayLine);
 			}
 		}else{

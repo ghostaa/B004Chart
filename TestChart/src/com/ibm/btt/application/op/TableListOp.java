@@ -75,8 +75,8 @@ public class TableListOp extends BTTServerOperation {
 								l_item.setValueAt("label", l_json_item.get("label"));
 								
 								//amount
-								l_item.setValueAt("amount", (l_random.nextFloat() * 10000) + "");
-								l_item.setValueAt("size", l_random.nextFloat() * 2500 + "");
+								l_item.setValueAt("amount", new Float( (l_random.nextFloat() * 10000)));
+								l_item.setValueAt("size", new Float(l_random.nextFloat() * 2500));
 
 								l_instance.addElement(l_item);
 							}

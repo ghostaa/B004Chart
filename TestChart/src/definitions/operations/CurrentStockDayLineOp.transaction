@@ -76,6 +76,14 @@
             <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_-Zf61UbHEeOgvZj2gommjg" key="_-Zf600bHEeOgvZj2gommjg" value="both"/>
             <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_-Zf61kbHEeOgvZj2gommjg" key="_-Zf60UbHEeOgvZj2gommjg" value="close"/>
           </elements>
+          <elements xmi:type="transaction:DataField" xmi:id="_iyop0FG6EeOTVeGMFGgwbQ" tag="field" id="mid">
+            <attributes xmi:type="transaction:Attribute" xmi:id="_iyop0VG6EeOTVeGMFGgwbQ" name="id" required="true" type="java.lang.String"/>
+            <attributes xmi:type="transaction:Attribute" xmi:id="_iyop0lG6EeOTVeGMFGgwbQ" name="description" type="java.lang.String"/>
+            <attributes xmi:type="transaction:Attribute" xmi:id="_iyop01G6EeOTVeGMFGgwbQ" name="direction" type="java.lang.String"/>
+            <attributes xmi:type="transaction:Attribute" xmi:id="_iyop1FG6EeOTVeGMFGgwbQ" name="value" type="java.lang.String"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_iyop1VG6EeOTVeGMFGgwbQ" key="_iyop01G6EeOTVeGMFGgwbQ" value="both"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_iyop1lG6EeOTVeGMFGgwbQ" key="_iyop0VG6EeOTVeGMFGgwbQ" value="mid"/>
+          </elements>
         </element>
       </elements>
       <elements xmi:type="transaction:DataField" xmi:id="_Io68MEbIEeOgvZj2gommjg" tag="field" id="stockID">

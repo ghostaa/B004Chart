@@ -15,6 +15,7 @@
 				<field id="high"/>
 				<field id="low"/>
 				<field id="close"/>
+				<field id="mid"/>
 			</kColl>
 		</iColl>
 		<field id="stockID" value="600220"/>

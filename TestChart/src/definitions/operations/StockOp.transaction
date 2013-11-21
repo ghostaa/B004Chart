@@ -76,13 +76,13 @@
             <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_DGLsp0FHEeOZ7Jccqgh86w" key="_DGLso0FHEeOZ7Jccqgh86w" value="both"/>
             <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_DGLsqEFHEeOZ7Jccqgh86w" key="_DGLspUFHEeOZ7Jccqgh86w" value="Float"/>
           </elements>
-          <elements xmi:type="transaction:Data" xmi:id="_FXoK0EFHEeOZ7Jccqgh86w" tag="data" id="min">
+          <elements xmi:type="transaction:Data" xmi:id="_FXoK0EFHEeOZ7Jccqgh86w" tag="data" id="mid">
             <attributes xmi:type="transaction:Attribute" xmi:id="_FXoK0UFHEeOZ7Jccqgh86w" name="id" required="true" type="java.lang.String"/>
             <attributes xmi:type="transaction:Attribute" xmi:id="_FXoK0kFHEeOZ7Jccqgh86w" name="value" type="java.lang.String"/>
             <attributes xmi:type="transaction:Attribute" xmi:id="_FXoK00FHEeOZ7Jccqgh86w" name="direction" type="java.lang.String"/>
             <attributes xmi:type="transaction:Attribute" xmi:id="_FXoK1EFHEeOZ7Jccqgh86w" name="description" type="java.lang.String"/>
             <attributes xmi:type="transaction:Attribute" xmi:id="_FXoK1UFHEeOZ7Jccqgh86w" name="refType" required="true" type="java.lang.String"/>
-            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_FXoK1kFHEeOZ7Jccqgh86w" key="_FXoK0UFHEeOZ7Jccqgh86w" value="min"/>
+            <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_FXoK1kFHEeOZ7Jccqgh86w" key="_FXoK0UFHEeOZ7Jccqgh86w" value="mid"/>
             <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_FXoK10FHEeOZ7Jccqgh86w" key="_FXoK00FHEeOZ7Jccqgh86w" value="both"/>
             <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_FXoK2EFHEeOZ7Jccqgh86w" key="_FXoK1UFHEeOZ7Jccqgh86w" value="Float"/>
           </elements>

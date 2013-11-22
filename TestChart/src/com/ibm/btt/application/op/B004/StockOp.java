@@ -61,6 +61,6 @@ public class StockOp extends BTTServerOperation {
 		  ex.printStackTrace();
 		  throw ex;
 	  }
-  
+	  this.fireExitEvent("opEvt");
   }
 }

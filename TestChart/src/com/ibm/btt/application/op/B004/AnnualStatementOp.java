@@ -65,6 +65,7 @@ public class AnnualStatementOp extends BTTServerOperation {
 		  ex.printStackTrace();
 		  throw ex;
 	  }
+	  this.fireExitEvent("opEvt");
   }
   
 }

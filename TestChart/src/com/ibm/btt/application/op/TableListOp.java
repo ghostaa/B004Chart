@@ -96,5 +96,6 @@ public class TableListOp extends BTTServerOperation {
 		  ex.printStackTrace();
 		  throw ex;
 	  }
+	  this.fireExitEvent("opEvt");
   }
 }
